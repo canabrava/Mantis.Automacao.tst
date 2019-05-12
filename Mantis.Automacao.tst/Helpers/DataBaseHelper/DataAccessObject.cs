@@ -35,10 +35,11 @@ namespace Mantis.Automacao.tst.Helpers.DataBaseHelper
 
         }
 
-        public void AddParameter(string variable, SqlParameter value, SqlDbType type)
+        public void AddParameter(string variable, object value, SqlDbType type)
         {
-            command.Parameters.Add(variable, type);
-            command.Parameters["variable"] = value;
+            var parameter = new SqlParameter(variable, value);
+
+            command.Parameters.Add(variable, type).Value = parameter;
         }
 
         private void SetConnection()
