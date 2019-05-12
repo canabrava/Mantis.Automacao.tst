@@ -1,6 +1,6 @@
 ﻿using Mantis.Automacao.tst.Helpers;
+using Mantis.Automacao.tst.Helpers.ReportHelper;
 using Mantis.Automacao.tst.Pages;
-using NUnit.Framework;
 using TechTalk.SpecFlow;
 
 namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
@@ -34,13 +34,13 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
         [StepDefinition(@"devemos ir para a página de login")]
         public void ThenDevemosIrParaAPaginaDeLogin()
         {
-            Assert.IsTrue(loginPage.AmInLoginPage());
+            Assertions.AssertTrue(loginPage.AmInLoginPage());
         }
 
         [StepDefinition(@"eu devo ver uma mensagem avisando que houve um erro no login")]
         public void ThenEuDevoVerUmaMensagemAvisandoQueHouveUmErroNoLogin()
         {
-            Assert.IsTrue(loginPage.IsLoginErrorMessageDisplayed());
+            Assertions.AssertTrue(loginPage.IsLoginErrorMessageDisplayed());
         }
 
 

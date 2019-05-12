@@ -1,4 +1,5 @@
 ﻿using AventStack.ExtentReports;
+using Mantis.Automacao.tst.Models;
 using NUnit.Framework;
 using OpenQA.Selenium;
 
@@ -9,42 +10,29 @@ namespace Mantis.Automacao.tst.Helpers.ReportHelper
         private static IWebDriver driver = DriverFactory.INSTANCE;
         private static ExtentTest extentTest;
 
-        public static void AssertTrue(bool assertedValue, string failingMessage, string passingMessage)
+        public static void AssertTrue(ResultModel result)
         {
             try
             {
-                Assert.IsTrue(assertedValue, failingMessage);
-                extentTest.Pass(passingMessage);
+                Assert.True(result.result);
+                extentTest.Pass(result.message);
             }
             catch (AssertionException)
             {
-                extentTest.Fail(failingMessage, MediaEntityBuilder.CreateScreenCaptureFromPath(ReportingHelper.CreateScreenshot(driver)).Build());
+                extentTest.Fail(result.message, MediaEntityBuilder.CreateScreenCaptureFromPath(ReportingHelper.CreateScreenshot(driver)).Build());
             }
         }
 
-        public static void AssertFalse(IWebDriver driver, ExtentTest extentTest, bool assertedValue, string failingMessage, string passingMessage)
+        public static void AssertFalse(ResultModel result)
         {
             try
             {
-                Assert.IsFalse(assertedValue, failingMessage);
-                extentTest.Pass(passingMessage);
+                Assert.False(result.result);
+                extentTest.Pass(result.message);
             }
             catch (AssertionException)
             {
-                extentTest.Fail(failingMessage, MediaEntityBuilder.CreateScreenCaptureFromPath(ReportingHelper.CreateScreenshot(driver)).Build());
-            }
-        }
-
-        public static void AssertEquals(IWebDriver driver, ExtentTest extentTest, object actualValue, object expectedValue, string failingMessage, string passingMessage)
-        {
-            try
-            {
-                Assert.AreEqual(expectedValue, actualValue, failingMessage);
-                extentTest.Pass(passingMessage);
-            }
-            catch (AssertionException)
-            {
-                extentTest.Fail(failingMessage, MediaEntityBuilder.CreateScreenCaptureFromPath(ReportingHelper.CreateScreenshot(driver)).Build());
+                extentTest.Fail(result.message, MediaEntityBuilder.CreateScreenCaptureFromPath(ReportingHelper.CreateScreenshot(driver)).Build());
             }
         }
     }

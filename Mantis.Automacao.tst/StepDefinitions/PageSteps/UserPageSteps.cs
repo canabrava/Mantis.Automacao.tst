@@ -1,6 +1,6 @@
 ﻿using Mantis.Automacao.tst.Helpers;
+using Mantis.Automacao.tst.Helpers.ReportHelper;
 using Mantis.Automacao.tst.Pages;
-using NUnit.Framework;
 using TechTalk.SpecFlow;
 
 namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
@@ -14,7 +14,7 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
         [StepDefinition(@"eu devo entrar na pagina principal")]
         public void ThenEuDevoEntrarNaPaginaPrincipal()
         {
-            Assert.IsTrue(userPage.upperMenu.IsUserLoggedIn(context.GetUserName()));
+            Assertions.AssertTrue(userPage.upperMenu.IsUserLoggedIn(context.GetUserName()));
         }
     }
 }

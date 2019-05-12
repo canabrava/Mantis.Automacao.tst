@@ -1,4 +1,6 @@
 ﻿using Mantis.Automacao.tst.Bases;
+using Mantis.Automacao.tst.Models;
+using Mantis.Automacao.tst.Resources;
 using OpenQA.Selenium;
 
 
@@ -32,14 +34,26 @@ namespace Mantis.Automacao.tst.Pages
             Click(btnEntrar);
         }
 
-        public bool AmInLoginPage()
+        public ResultModel AmInLoginPage()
         {
-            return ReturnIfElementIsDisplayed(btnCreateNewAccount);
+            var amInLoginPage = ReturnIfElementIsDisplayed(btnCreateNewAccount);
+
+            return new ResultModel()
+            {
+                result = amInLoginPage,
+                message = amInLoginPage ? AssertionsMessages.AmInLoginPageSuccess : AssertionsMessages.AmInLoginPageFail
+            };
         }
 
-        public bool IsLoginErrorMessageDisplayed()
+        public ResultModel IsLoginErrorMessageDisplayed()
         {
-            return ReturnIfElementIsDisplayed(loginErrorMessage);
+            var isLoginErrorDisplayed = ReturnIfElementIsDisplayed(loginErrorMessage);
+
+            return new ResultModel()
+            {
+                result = isLoginErrorDisplayed,
+                message = isLoginErrorDisplayed ? AssertionsMessages.ErrorMessageSuccess : AssertionsMessages.ErrorMessageFail
+            };
         }
         #endregion
 

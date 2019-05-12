@@ -1,7 +1,7 @@
 ﻿using Mantis.Automacao.tst.Helpers;
 using Mantis.Automacao.tst.Pages;
-using NUnit.Framework;
 using TechTalk.SpecFlow;
+using Mantis.Automacao.tst.Helpers.ReportHelper;
 
 namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
 {
@@ -14,7 +14,7 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
         [StepDefinition(@"devo ir para a página de senha")]
         public void ThenDevoIrParaAPaginaDeSenha()
         {
-            Assert.IsTrue(passwordPage.AmInPasswordPage());
+            Assertions.AssertTrue(passwordPage.AmInPasswordPage());
         }
 
         [StepDefinition(@"eu entro com a senha '(.*)' no campo senha")]
