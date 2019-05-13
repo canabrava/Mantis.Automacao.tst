@@ -135,6 +135,12 @@
   <data name="ErrorMessageSuccess" xml:space="preserve">
     <value>The correct error message was dislpayed!</value>
   </data>
+  <data name="UserCreatedFail" xml:space="preserve">
+    <value>The user was note created successfully</value>
+  </data>
+  <data name="UserCreatedSucces" xml:space="preserve">
+    <value>The user was created successfully</value>
+  </data>
   <data name="UserLogedInSuccess" xml:space="preserve">
     <value>The user loged in successfully!</value>
   </data>

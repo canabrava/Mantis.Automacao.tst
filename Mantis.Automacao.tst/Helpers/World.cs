@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Mantis.Automacao.tst.Models;
 
 namespace Mantis.Automacao.tst.Helpers
 {
@@ -35,6 +31,7 @@ namespace Mantis.Automacao.tst.Helpers
         #region Stored Variables
 
         private string userName = string.Empty;
+        private UserModel newUser = new UserModel();
 
         #endregion
 
@@ -48,6 +45,16 @@ namespace Mantis.Automacao.tst.Helpers
         public string GetUserName()
         {
             return userName;
+        }
+
+        public void SetNewUser(UserModel newUser)
+        {
+            this.newUser = newUser;
+        }
+
+        public UserModel GetNewUser()
+        {
+            return newUser;
         }
 
         #endregion

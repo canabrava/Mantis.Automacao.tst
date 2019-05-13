@@ -115,6 +115,24 @@ namespace Mantis.Automacao.tst.Resources {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The user was note created successfully.
+        /// </summary>
+        internal static string UserCreatedFail {
+            get {
+                return ResourceManager.GetString("UserCreatedFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The user was created successfully.
+        /// </summary>
+        internal static string UserCreatedSucces {
+            get {
+                return ResourceManager.GetString("UserCreatedSucces", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The user loged in successfully!.
         /// </summary>
         internal static string UserLogedInSuccess {

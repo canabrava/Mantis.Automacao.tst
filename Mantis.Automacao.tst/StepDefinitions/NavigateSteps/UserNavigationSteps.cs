@@ -1,4 +1,5 @@
-﻿using TechTalk.SpecFlow;
+﻿using Mantis.Automacao.tst.Flows;
+using TechTalk.SpecFlow;
 
 namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
 {
@@ -8,7 +9,7 @@ namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
         [StepDefinition(@"entre na tela de criar nova conta")]
         public void GivenEntreNaTelaDeCriarNovaConta()
         {
-            ScenarioContext.Current.Pending();
+            CreateUser.EnterCreateUserPage();
         }
     }
 }

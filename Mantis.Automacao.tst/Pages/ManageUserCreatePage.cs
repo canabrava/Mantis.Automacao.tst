@@ -1,27 +1,61 @@
 ﻿using Mantis.Automacao.tst.Bases;
 using OpenQA.Selenium;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Mantis.Automacao.tst.Pages
 {
     class ManageUserCreatePage : PageBase
     {
+
         #region Mapping
 
-        By btnProcced = By.XPath("//*[contains(text(), 'Clique aqui para prosseguir')]");
+        By fieldUserName = By.XPath("//*[@id='user-username']");
+
+        By fieldRealName = By.XPath("//*[@id='user-realname']");
+
+        By fieldEmail = By.XPath("//*[@id='email-field']");
+
+        By selectorAccessLevel = By.XPath("//*[@id='user-access-level']");
+
+        By checkBoxUserEnabled = By.XPath("//*[@id='user-enabled']");
+
+        By checkBoxUserProtected = By.XPath("//*[@id='user-protected']");
+
+        By btnCreateUser = By.XPath("//*[@class='btn btn-primary btn-white btn-round']");
 
         #endregion
 
         #region Actions
 
-        public void ClickProceed()
+        public void FillUserName(string username)
         {
-            Click(btnProcced);
+            SendKeys(fieldUserName, username);
         }
 
-        public bool AnInManageUserCreatePage(string accessLevel)
+        public void FillRealName(string realname)
         {
-            return ReturnIfElementIsDisplayed(By.XPath("//*[contains(text(), 'Usuário criado com um nível de acesso de " + accessLevel + " ')]"));
+            SendKeys(fieldRealName, realname);
         }
+
+        public void FillEmail(string email)
+        {
+            SendKeys(fieldEmail, email);
+        }
+
+        public void FillAccessLevel(string accessLevel)
+        {
+            SendKeys(selectorAccessLevel, accessLevel);
+        }
+
+        public void ClickCreateUser()
+        {
+            Click(btnCreateUser);
+        }
+
 
         #endregion
     }
