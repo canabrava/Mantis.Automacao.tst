@@ -8,6 +8,7 @@ using TechTalk.SpecFlow;
 
 namespace Mantis.Automacao.tst.Hooks
 {
+    [Binding]
     class ReportHooks
     {
         #region Variables Declaration

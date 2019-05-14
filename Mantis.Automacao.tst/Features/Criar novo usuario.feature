@@ -10,7 +10,7 @@ Background:
 @CriarConta
 Scenario Outline: Criar nova conta valida
 	And entre na tela de criar nova conta
-	When eu preencher as informacoes  '<USERNAME>', '<REAL_NAME>', '<E-MAIL>' e <'ACCESS_LEVEL'>
+	When eu preencher as informacoes do novo usuario: '<USERNAME>', '<REAL_NAME>', '<E-MAIL>' e <'ACCESS_LEVEL'>
 	And clicar para criar nova conta
 	Then eu tenho a confirmacao de que o usuario foi criado corretamente
 	And o novo usuario dever ter sido criado corretamente
@@ -26,14 +26,14 @@ Scenario Outline: Criar nova conta valida
 
 Scenario: Criar nova conta com nome do usuario repetido
 	And entre na tela de criar nova conta
-	When eu preencher as informacoes  'usuarioTeste', 'nomeDiferente', 'teste@teste.com' e 'vizualizador'
+	When eu preencher as informacoes do novo usuario: 'usuarioTeste', 'nomeDiferente', 'teste@teste.com' e 'vizualizador'
 	And clicar para criar nova conta
 	Then eu vejo uma mensagem de que nao e possivel criar usuario com nome repetido
 	And o novo usuario nao dever ter sido criado corretamente
 
 Scenario Outline: Criar nova conta com nome do usuario invalido
 	And entre na tela de criar nova conta
-	When eu preencher as informacoes  '<USERNAME>', '<REAL_NAME>', '<E-MAIL>' e <'ACCESS_LEVEL'>
+	When eu preencher as informacoes do novo usuario: '<USERNAME>', '<REAL_NAME>', '<E-MAIL>' e <'ACCESS_LEVEL'>
 	And clicar para criar nova conta
 	Then eu vejo uma mensagem de erro dizendo que o nome do usuario esta invalido
 	And o novo usuario dever ter sido criado corretamente
@@ -50,7 +50,7 @@ Scenario Outline: Criar nova conta com nome do usuario invalido
 
 Scenario Outline: Criar nova conta com e-mail invalido
 	And entre na tela de criar nova conta
-	When eu preencher as informacoes  '<USERNAME>', '<REAL_NAME>', '<E-MAIL>' e <'ACCESS_LEVEL'>
+	When eu preencher as informacoes do novo usuario: '<USERNAME>', '<REAL_NAME>', '<E-MAIL>' e <'ACCESS_LEVEL'>
 	And clicar para criar nova conta
 	Then eu vejo uma mensagem de erro dizendo que o e-mail esta invalido
 	And o novo usuario nao dever ter sido criado corretamente

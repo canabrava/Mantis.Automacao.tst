@@ -121,6 +121,7 @@
     <Compile Include="Helpers\World.cs" />
     <Compile Include="Hooks\DriverHooks.cs" />
     <Compile Include="Hooks\ReportHooks.cs" />
+    <Compile Include="Hooks\UserHooks.cs" />
     <Compile Include="Models\ResultModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Pages\ErrorMessagePage.cs" />
@@ -154,6 +155,7 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Features\Criar novo projeto.feature" />
     <None Include="Features\Criar novo usuario.feature" />
     <None Include="Features\Login.feature" />
     <None Include="packages.config" />

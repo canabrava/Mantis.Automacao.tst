@@ -11,10 +11,11 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
     {
         World context = World.GetInstance();
 
-        [StepDefinition(@"eu preencher as informacoes  '(.*)', '(.*)', '(.*)' e (.*)")]
-        public void WhenEuPreencherAsInformacoesE(string username, string realName, string email, string accessLevel)
+        [StepDefinition(@"eu preencher as informacoes do novo usuario: '(.*)', '(.*)', '(.*)' e (.*)")]
+        public void WhenEuPreencherAsInformacoesDoNovoUsuarioE(string username, string realName, string email, string accessLevel)
         {
-            context.SetNewUser(new UserModel() {
+            context.SetNewUser(new UserModel()
+            {
                 username = username,
                 realName = realName,
                 email = email,
