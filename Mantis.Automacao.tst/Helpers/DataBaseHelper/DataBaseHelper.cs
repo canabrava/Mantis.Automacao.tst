@@ -1,5 +1,4 @@
 ﻿using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
 
 namespace Mantis.Automacao.tst.Helpers.DataBaseHelper

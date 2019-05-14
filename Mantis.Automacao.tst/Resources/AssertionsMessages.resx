@@ -129,6 +129,12 @@
   <data name="AmInPasswordPageSuccess" xml:space="preserve">
     <value>The browser is in the password page!</value>
   </data>
+  <data name="ErrorDisplayedFail" xml:space="preserve">
+    <value>The correct error was not displayed!</value>
+  </data>
+  <data name="ErrorDisplayedSuccess" xml:space="preserve">
+    <value>The correct error was displayed!</value>
+  </data>
   <data name="ErrorMessageFail" xml:space="preserve">
     <value>The correct error message was not displayed!</value>
   </data>

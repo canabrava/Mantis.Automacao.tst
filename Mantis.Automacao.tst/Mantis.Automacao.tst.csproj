@@ -114,7 +114,6 @@
     <Compile Include="Helpers\DataBaseHelper\DataAccessObject.cs" />
     <Compile Include="Helpers\DataBaseHelper\DataBaseHelper.cs" />
     <Compile Include="Helpers\DataBaseHelper\DbConnection\DBMantisDAL.cs" />
-    <Compile Include="Helpers\DataBaseHelper\IDispose.cs" />
     <Compile Include="Helpers\DriverFactory.cs" />
     <Compile Include="Helpers\ReportHelper\Assertions.cs" />
     <Compile Include="Helpers\ReportHelper\LogTracer.cs" />
@@ -124,6 +123,7 @@
     <Compile Include="Hooks\ReportHooks.cs" />
     <Compile Include="Models\ResultModel.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Pages\ErrorMessagePage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\LoginPasswordPage.cs" />
     <Compile Include="Pages\ManageOverviewPage.cs" />
@@ -144,7 +144,7 @@
     <Compile Include="StepDefinitions\NavigateSteps\LoginSteps.cs" />
     <Compile Include="StepDefinitions\NavigateSteps\UserNavigationSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ConfirmationMessagesPageSteps.cs" />
-    <Compile Include="StepDefinitions\PageSteps\ErrorMessagePage.cs" />
+    <Compile Include="StepDefinitions\PageSteps\ErrorMessagePageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\LoginPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\LoginPasswordPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ManagePageSteps.cs" />

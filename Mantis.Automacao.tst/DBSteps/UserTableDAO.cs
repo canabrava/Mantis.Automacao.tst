@@ -1,5 +1,7 @@
 ﻿using Mantis.Automacao.tst.Helpers.DataBaseHelper.DbConnection;
+using Mantis.Automacao.tst.Models;
 using System.Data;
+using System.Linq;
 
 namespace Mantis.Automacao.tst.DBSteps
 {
@@ -15,7 +17,7 @@ namespace Mantis.Automacao.tst.DBSteps
             }
         }
 
-        public DataTable ReturnClient(string username)
+        public UserModel ReturnUser(string username)
         {
             var result = new DataTable();
 
@@ -26,7 +28,13 @@ namespace Mantis.Automacao.tst.DBSteps
                 result = DAO.Select();
             }
 
-            return result;
+            return result.AsEnumerable().Select(x => new UserModel()
+            {
+                username = x.Field<string>("username"),
+                realName = x.Field<string>("realname"),
+                email = x.Field<string>("email"),
+                accessLevel = x.Field<string>("access_level")
+            }).First();
         }
 
         #region Querys

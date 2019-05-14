@@ -97,6 +97,24 @@ namespace Mantis.Automacao.tst.Resources {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The correct error was not displayed!.
+        /// </summary>
+        internal static string ErrorDisplayedFail {
+            get {
+                return ResourceManager.GetString("ErrorDisplayedFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The correct error was displayed!.
+        /// </summary>
+        internal static string ErrorDisplayedSuccess {
+            get {
+                return ResourceManager.GetString("ErrorDisplayedSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The correct error message was not displayed!.
         /// </summary>
         internal static string ErrorMessageFail {
