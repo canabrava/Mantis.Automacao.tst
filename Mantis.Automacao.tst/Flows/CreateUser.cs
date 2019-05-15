@@ -7,20 +7,9 @@ namespace Mantis.Automacao.tst.Flows
 {
     public static class CreateUser
     {
-        public static void EnterCreateUserPage()
-        {
-            var userPage = new UserPage();
-            var manageOverviewPage = new ManageOverviewPage();
-            var manageUserPage = new ManageUserPage();
-
-            userPage.sideMenu.ClickManageOverview();
-            manageOverviewPage.manageMenu.ClickManageUsers();
-            manageUserPage.ClickCreateNewUser();
-        }
-
         public static void FillNewUserInformation(UserModel newUser)
         {
-            var manageUserCreatePage = new ManageUserCreatePage();
+            var manageUserCreatePage = new CreateUserPage();
 
             manageUserCreatePage.FillUserName(newUser.username);
             manageUserCreatePage.FillRealName(newUser.realName);
@@ -41,8 +30,6 @@ namespace Mantis.Automacao.tst.Flows
                 result = isCreatedUserInDataBase,
                 message = isCreatedUserInDataBase ? AssertionsMessages.UserCreatedSucces : AssertionsMessages.UserCreatedFail
             };
-
-            
 
         }
     }

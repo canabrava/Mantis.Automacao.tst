@@ -104,7 +104,8 @@ this.FeatureBackground();
 #line 12
  testRunner.And("entre na tela de criar nova conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 13
- testRunner.When(string.Format("eu preencher as informacoes  \'{0}\', \'{1}\', \'{2}\' e <\'ACCESS_LEVEL\'>", uSERNAME, rEAL_NAME, e_MAIL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("eu preencher as informacoes do novo usuario: \'{0}\', \'{1}\', \'{2}\' e <\'ACCESS_LEVEL" +
+                        "\'>", uSERNAME, rEAL_NAME, e_MAIL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
  testRunner.And("clicar para criar nova conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 15
@@ -128,14 +129,12 @@ this.FeatureBackground();
 #line 28
  testRunner.And("entre na tela de criar nova conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 29
- testRunner.When("eu preencher as informacoes  \'usuarioTeste\', \'nomeDiferente\', \'teste@teste.com\' e" +
-                    " \'vizualizador\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("eu preencher as informacoes do novo usuario: \'usuarioTeste\', \'nomeDiferente\', \'te" +
+                    "ste@teste.com\' e \'vizualizador\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 30
  testRunner.And("clicar para criar nova conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 31
  testRunner.Then("eu vejo uma mensagem de que nao e possivel criar usuario com nome repetido", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 32
- testRunner.And("o novo usuario nao dever ter sido criado corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -159,7 +158,8 @@ this.FeatureBackground();
 #line 35
  testRunner.And("entre na tela de criar nova conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 36
- testRunner.When(string.Format("eu preencher as informacoes  \'{0}\', \'{1}\', \'{2}\' e <\'ACCESS_LEVEL\'>", uSERNAME, rEAL_NAME, e_MAIL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("eu preencher as informacoes do novo usuario: \'{0}\', \'{1}\', \'{2}\' e <\'ACCESS_LEVEL" +
+                        "\'>", uSERNAME, rEAL_NAME, e_MAIL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 37
  testRunner.And("clicar para criar nova conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 38
@@ -186,7 +186,8 @@ this.FeatureBackground();
 #line 52
  testRunner.And("entre na tela de criar nova conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 53
- testRunner.When(string.Format("eu preencher as informacoes  \'{0}\', \'{1}\', \'{2}\' e <\'ACCESS_LEVEL\'>", uSERNAME, rEAL_NAME, e_MAIL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("eu preencher as informacoes do novo usuario: \'{0}\', \'{1}\', \'{2}\' e <\'ACCESS_LEVEL" +
+                        "\'>", uSERNAME, rEAL_NAME, e_MAIL), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 54
  testRunner.And("clicar para criar nova conta", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 55

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Mantis.Automacao.tst.Pages
 {
-    class ManageUserCreatePage : PageBase
+    class CreateUserPage : PageBase
     {
 
         #region Mapping

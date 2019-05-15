@@ -9,7 +9,14 @@ namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
         [StepDefinition(@"entre na tela de criar nova conta")]
         public void GivenEntreNaTelaDeCriarNovaConta()
         {
-            CreateUser.EnterCreateUserPage();
+            Navigation.EnterCreateUserPage();
         }
+
+        [StepDefinition(@"entre na tela de criar novo projeto")]
+        public void GivenEntreNaTelaDeCriarNovoProjeto()
+        {
+            Navigation.EnterCreateProjectPage();
+        }
+
     }
 }

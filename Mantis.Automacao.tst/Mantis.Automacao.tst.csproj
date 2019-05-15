@@ -108,9 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bases\PageBase.cs" />
+    <Compile Include="DBSteps\ProjectTableDAO.cs" />
     <Compile Include="DBSteps\UserTableDAO.cs" />
+    <Compile Include="Flows\CreateProject.cs" />
     <Compile Include="Flows\CreateUser.cs" />
     <Compile Include="Flows\Login.cs" />
+    <Compile Include="Flows\Navigation.cs" />
     <Compile Include="Helpers\DataBaseHelper\DataAccessObject.cs" />
     <Compile Include="Helpers\DataBaseHelper\DataBaseHelper.cs" />
     <Compile Include="Helpers\DataBaseHelper\DbConnection\DBMantisDAL.cs" />
@@ -122,13 +125,16 @@
     <Compile Include="Hooks\DriverHooks.cs" />
     <Compile Include="Hooks\ReportHooks.cs" />
     <Compile Include="Hooks\UserHooks.cs" />
+    <Compile Include="Models\ProjectModel.cs" />
     <Compile Include="Models\ResultModel.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Pages\CreateProjectPage.cs" />
     <Compile Include="Pages\ErrorMessagePage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\LoginPasswordPage.cs" />
     <Compile Include="Pages\ManageOverviewPage.cs" />
-    <Compile Include="Pages\ManageUserCreatePage.cs" />
+    <Compile Include="Pages\CreateUserPage.cs" />
+    <Compile Include="Pages\ManageProjectPage.cs" />
     <Compile Include="Pages\ManageUserPage.cs" />
     <Compile Include="Pages\Menus\ManageMenu.cs" />
     <Compile Include="Pages\SuccessMessagePage.cs" />
@@ -141,6 +147,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssertionsMessages.resx</DependentUpon>
     </Compile>
+    <Compile Include="StepDefinitions\DataBaseSteps\ProjectTableSteps.cs" />
     <Compile Include="StepDefinitions\DataBaseSteps\UserTableSteps.cs" />
     <Compile Include="StepDefinitions\NavigateSteps\LoginSteps.cs" />
     <Compile Include="StepDefinitions\NavigateSteps\UserNavigationSteps.cs" />
@@ -148,7 +155,8 @@
     <Compile Include="StepDefinitions\PageSteps\ErrorMessagePageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\LoginPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\LoginPasswordPageSteps.cs" />
-    <Compile Include="StepDefinitions\PageSteps\ManagePageSteps.cs" />
+    <Compile Include="StepDefinitions\PageSteps\CreateProjectsPageSteps.cs" />
+    <Compile Include="StepDefinitions\PageSteps\CreateUserPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\UserPageSteps.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -160,9 +168,7 @@
     <None Include="Features\Login.feature" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Queries\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Resources\AssertionsMessages.resx">
       <Generator>ResXFileCodeGenerator</Generator>

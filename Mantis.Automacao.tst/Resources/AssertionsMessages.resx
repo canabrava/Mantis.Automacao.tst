@@ -141,11 +141,23 @@
   <data name="ErrorMessageSuccess" xml:space="preserve">
     <value>The correct error message was dislpayed!</value>
   </data>
+  <data name="OperationFail" xml:space="preserve">
+    <value>The operation failed!</value>
+  </data>
+  <data name="OperationSuccess" xml:space="preserve">
+    <value>The operation was successfull!</value>
+  </data>
+  <data name="ProjectCreatedFail" xml:space="preserve">
+    <value>The project not was created successfully!</value>
+  </data>
+  <data name="ProjectCreatedSuccess" xml:space="preserve">
+    <value>The project was created successfully!</value>
+  </data>
   <data name="UserCreatedFail" xml:space="preserve">
-    <value>The user was note created successfully</value>
+    <value>The user was note created successfully!</value>
   </data>
   <data name="UserCreatedSucces" xml:space="preserve">
-    <value>The user was created successfully</value>
+    <value>The user was created successfully!</value>
   </data>
   <data name="UserLogedInSuccess" xml:space="preserve">
     <value>The user loged in successfully!</value>

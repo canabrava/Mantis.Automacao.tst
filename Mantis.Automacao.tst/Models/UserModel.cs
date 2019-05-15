@@ -9,11 +9,10 @@
 
         public bool IsEqual(UserModel user)
         {
-            if (user.username.Equals(username)
-                && user.realName.Equals(realName)
-                && user.email.Equals(email)
-                && user.accessLevel.Equals(accessLevel)) return true;
-            else return false;
+            return user.username.Equals(username)
+                   && user.realName.Equals(realName)
+                   && user.email.Equals(email)
+                   && user.accessLevel.Equals(accessLevel);
         }
     }
 }

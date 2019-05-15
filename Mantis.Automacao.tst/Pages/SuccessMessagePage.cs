@@ -31,6 +31,17 @@ namespace Mantis.Automacao.tst.Pages
             };
         }
 
+        public ResultModel AmInOperationSuccessPage()
+        {
+            var amInOperationSuccessPage = ReturnIfElementIsDisplayed(By.XPath("//*[contains(text(), 'Operação realizada com sucesso.')]"));
+
+            return new ResultModel()
+            {
+                result = amInOperationSuccessPage,
+                message = amInOperationSuccessPage ? AssertionsMessages.OperationSuccess : AssertionsMessages.OperationFail
+            };
+        }
+
         #endregion
     }
 }

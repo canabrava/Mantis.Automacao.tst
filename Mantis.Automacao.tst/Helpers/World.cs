@@ -32,6 +32,7 @@ namespace Mantis.Automacao.tst.Helpers
 
         private string userName = string.Empty;
         private UserModel newUser = new UserModel();
+        private ProjectModel newProject = new ProjectModel();
 
         #endregion
 
@@ -55,6 +56,16 @@ namespace Mantis.Automacao.tst.Helpers
         public UserModel GetNewUser()
         {
             return newUser;
+        }
+
+        public void SetNewProject(ProjectModel newProject)
+        {
+            this.newProject = newProject;
+        }
+
+        public ProjectModel GetNewProject()
+        {
+            return newProject;
         }
 
         #endregion

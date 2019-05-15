@@ -133,7 +133,43 @@ namespace Mantis.Automacao.tst.Resources {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a The user was note created successfully.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The operation failed!.
+        /// </summary>
+        internal static string OperationFail {
+            get {
+                return ResourceManager.GetString("OperationFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The operation was successfull!.
+        /// </summary>
+        internal static string OperationSuccess {
+            get {
+                return ResourceManager.GetString("OperationSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The project not was created successfully!.
+        /// </summary>
+        internal static string ProjectCreatedFail {
+            get {
+                return ResourceManager.GetString("ProjectCreatedFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The project was created successfully!.
+        /// </summary>
+        internal static string ProjectCreatedSuccess {
+            get {
+                return ResourceManager.GetString("ProjectCreatedSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The user was note created successfully!.
         /// </summary>
         internal static string UserCreatedFail {
             get {
@@ -142,7 +178,7 @@ namespace Mantis.Automacao.tst.Resources {
         }
         
         /// <summary>
-        ///   Consulta uma cadeia de caracteres localizada semelhante a The user was created successfully.
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The user was created successfully!.
         /// </summary>
         internal static string UserCreatedSucces {
             get {

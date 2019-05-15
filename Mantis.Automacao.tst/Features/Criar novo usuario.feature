@@ -29,7 +29,7 @@ Scenario: Criar nova conta com nome do usuario repetido
 	When eu preencher as informacoes do novo usuario: 'usuarioTeste', 'nomeDiferente', 'teste@teste.com' e 'vizualizador'
 	And clicar para criar nova conta
 	Then eu vejo uma mensagem de que nao e possivel criar usuario com nome repetido
-	And o novo usuario nao dever ter sido criado corretamente
+
 
 Scenario Outline: Criar nova conta com nome do usuario invalido
 	And entre na tela de criar nova conta

@@ -7,7 +7,7 @@ using TechTalk.SpecFlow;
 namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
 {
     [Binding]
-    class ManagePageSteps
+    class CreateUserPageSteps
     {
         World context = World.GetInstance();
 
@@ -28,7 +28,7 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
         [StepDefinition(@"clicar para criar nova conta")]
         public void WhenClicarParaCriarNovaConta()
         {
-            var manageUserCreatePage = new ManageUserCreatePage();
+            var manageUserCreatePage = new CreateUserPage();
 
             manageUserCreatePage.ClickCreateUser();
         }

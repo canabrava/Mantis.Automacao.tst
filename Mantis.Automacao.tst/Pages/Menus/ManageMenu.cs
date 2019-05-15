@@ -8,7 +8,9 @@ namespace Mantis.Automacao.tst.Pages.Menus
 
         #region Mapping
 
-        By btnManageUsers = By.XPath("//*[@href='/manage_user_page.php1]");
+        By btnManageUsers = By.XPath("//*[@href='/manage_user_page.php]");
+
+        By btnManageProject = By.XPath("//*[@href='/manage_proj_page.php']");
 
         #endregion
 
@@ -17,6 +19,11 @@ namespace Mantis.Automacao.tst.Pages.Menus
         public void ClickManageUsers()
         {
             Click(btnManageUsers);
+        }
+
+        public void ClickManageProjects()
+        {
+            Click(btnManageProject);
         }
 
         #endregion
