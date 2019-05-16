@@ -27,13 +27,13 @@ namespace Mantis.Automacao.tst.StepDefinitions.DataBaseSteps
             });
         }
 
-        [StepDefinition(@"o novo projeto deve ter sido criado corretamente")]
-        public void ThenONovoProjetoDeveTerSidoCriadoCorretamente()
+        [StepDefinition(@"o projeto deve estar salvo")]
+        public void ThenOProjetoDeveEstarSalvo()
         {
             Assertions.AssertTrue(CreateProject.IsNewProjectInDataBase(context.GetNewProject()));
         }
 
-        [Then(@"o projeto deve ter sido apagado")]
+        [StepDefinition(@"o projeto deve ter sido apagado")]
         public void ThenOProjetoDeveTerSidoApagado()
         {
             Assertions.AssertFalse(CreateProject.IsNewProjectInDataBase(context.GetNewProject()));

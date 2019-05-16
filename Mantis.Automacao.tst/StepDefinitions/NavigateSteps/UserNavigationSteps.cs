@@ -1,5 +1,6 @@
 ﻿using Mantis.Automacao.tst.DBSteps;
 using Mantis.Automacao.tst.Flows;
+using Mantis.Automacao.tst.Helpers;
 using TechTalk.SpecFlow;
 
 namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
@@ -26,6 +27,13 @@ namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
 
             Navigation.EnterManageProjectPage(projectTableDAO.ReturnProject(nomeProjeto).id);
         }
+
+        [StepDefinition(@"clicar em voltar")]
+        public void WhenClicarEmVoltar()
+        {
+            DriverFactory.INSTANCE.Navigate().Back();
+        }
+
 
     }
 }

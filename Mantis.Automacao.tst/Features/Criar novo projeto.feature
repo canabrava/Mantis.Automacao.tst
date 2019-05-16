@@ -13,7 +13,7 @@ Scenario Outline: Criar um novo projeto
 	When eu preencher as informacoes do novo projeto: '<NOME_PROJETO>', '<ESTADO>', '<VISIBILIDADE>', '<DESCRICAO>'
 	And clicar para criar um novo projeto
 	Then eu devo ver a mensagem de que o projeto foi criado corretamente
-	And o novo projeto deve ter sido criado corretamente
+	And o projeto deve estar salvo
 
 	Examples: 
 	| NOME_PROJETO | ESTADO          | VISIBILIDADE | DESCICAO                       |
