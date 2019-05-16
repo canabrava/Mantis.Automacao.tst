@@ -17,8 +17,8 @@ namespace Mantis.Automacao.tst.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Criar nova conta")]
+    [TechTalk.SpecRun.FeatureAttribute("Criar nova conta", Description="\tComo: Administrador\r\n\tQuero: Criar nova conta\r\n\tPara: Que outrar pessoas possam " +
+        "usar o Mantis", SourceFile="Features\\Criar novo usuario.feature", SourceLine=0)]
     public partial class CriarNovaContaFeature
     {
         
@@ -27,7 +27,7 @@ namespace Mantis.Automacao.tst.Features
 #line 1 "Criar novo usuario.feature"
 #line hidden
         
-        [NUnit.Framework.OneTimeSetUpAttribute()]
+        [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
@@ -36,19 +36,18 @@ namespace Mantis.Automacao.tst.Features
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.OneTimeTearDownAttribute()]
+        [TechTalk.SpecRun.FeatureCleanup()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
-        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
-        [NUnit.Framework.TearDownAttribute()]
+        [TechTalk.SpecRun.ScenarioCleanup()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -57,7 +56,6 @@ namespace Mantis.Automacao.tst.Features
         public virtual void ScenarioInitialize(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioInitialize(scenarioInfo);
-            testRunner.ScenarioContext.ScenarioContainer.RegisterInstanceAs<NUnit.Framework.TestContext>(NUnit.Framework.TestContext.CurrentContext);
         }
         
         public virtual void ScenarioStart()
@@ -78,15 +76,6 @@ namespace Mantis.Automacao.tst.Features
 #line hidden
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Criar nova conta valida")]
-        [NUnit.Framework.CategoryAttribute("CriarConta")]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "vizualizador", null)]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "relator", null)]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "atualizador", null)]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "desenvolvedor", null)]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "gerente", null)]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "administrador", null)]
         public virtual void CriarNovaContaValida(string uSERNAME, string rEAL_NAME, string e_MAIL, string aCCESS_LEVEL, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -116,8 +105,61 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Criar nova conta com nome do usuario repetido")]
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta valida, Variant 0", new string[] {
+                "CriarConta"}, SourceLine=19)]
+        public virtual void CriarNovaContaValida_Variant0()
+        {
+#line 11
+this.CriarNovaContaValida("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "vizualizador", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta valida, Variant 1", new string[] {
+                "CriarConta"}, SourceLine=19)]
+        public virtual void CriarNovaContaValida_Variant1()
+        {
+#line 11
+this.CriarNovaContaValida("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "relator", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta valida, Variant 2", new string[] {
+                "CriarConta"}, SourceLine=19)]
+        public virtual void CriarNovaContaValida_Variant2()
+        {
+#line 11
+this.CriarNovaContaValida("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "atualizador", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta valida, Variant 3", new string[] {
+                "CriarConta"}, SourceLine=19)]
+        public virtual void CriarNovaContaValida_Variant3()
+        {
+#line 11
+this.CriarNovaContaValida("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "desenvolvedor", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta valida, Variant 4", new string[] {
+                "CriarConta"}, SourceLine=19)]
+        public virtual void CriarNovaContaValida_Variant4()
+        {
+#line 11
+this.CriarNovaContaValida("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "gerente", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta valida, Variant 5", new string[] {
+                "CriarConta"}, SourceLine=19)]
+        public virtual void CriarNovaContaValida_Variant5()
+        {
+#line 11
+this.CriarNovaContaValida("usuarioTeste", "nomeRealTeste", "usuarioteste@teste.com", "administrador", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com nome do usuario repetido", SourceLine=26)]
         public virtual void CriarNovaContaComNomeDoUsuarioRepetido()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar nova conta com nome do usuario repetido", null, ((string[])(null)));
@@ -139,14 +181,6 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Criar nova conta com nome do usuario invalido")]
-        [NUnit.Framework.TestCaseAttribute("teste*", "nomeRealTeste", "usuarioteste@teste.com", "vizualizador", null)]
-        [NUnit.Framework.TestCaseAttribute("teste.", "nomeRealTeste", "usuarioteste@teste.com", "relator", null)]
-        [NUnit.Framework.TestCaseAttribute("teste?", "nomeRealTeste", "usuarioteste@teste.com", "atualizador", null)]
-        [NUnit.Framework.TestCaseAttribute("teste%", "nomeRealTeste", "usuarioteste@teste.com", "desenvolvedor", null)]
-        [NUnit.Framework.TestCaseAttribute("teste#", "nomeRealTeste", "usuarioteste@teste.com", "gerente", null)]
-        [NUnit.Framework.TestCaseAttribute("", "nomeRealTeste", "usuarioteste@teste.com", "administrador", null)]
         public virtual void CriarNovaContaComNomeDoUsuarioInvalido(string uSERNAME, string rEAL_NAME, string e_MAIL, string aCCESS_LEVEL, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar nova conta com nome do usuario invalido", null, exampleTags);
@@ -170,11 +204,54 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Criar nova conta com e-mail invalido")]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "teste.com", "vizualizador", null)]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "@teste.com", "relator", null)]
-        [NUnit.Framework.TestCaseAttribute("usuarioTeste", "nomeRealTeste", "usuarioteste", "atualizador", null)]
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com nome do usuario invalido, Variant 0", SourceLine=42)]
+        public virtual void CriarNovaContaComNomeDoUsuarioInvalido_Variant0()
+        {
+#line 34
+this.CriarNovaContaComNomeDoUsuarioInvalido("teste*", "nomeRealTeste", "usuarioteste@teste.com", "vizualizador", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com nome do usuario invalido, Variant 1", SourceLine=42)]
+        public virtual void CriarNovaContaComNomeDoUsuarioInvalido_Variant1()
+        {
+#line 34
+this.CriarNovaContaComNomeDoUsuarioInvalido("teste.", "nomeRealTeste", "usuarioteste@teste.com", "relator", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com nome do usuario invalido, Variant 2", SourceLine=42)]
+        public virtual void CriarNovaContaComNomeDoUsuarioInvalido_Variant2()
+        {
+#line 34
+this.CriarNovaContaComNomeDoUsuarioInvalido("teste?", "nomeRealTeste", "usuarioteste@teste.com", "atualizador", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com nome do usuario invalido, Variant 3", SourceLine=42)]
+        public virtual void CriarNovaContaComNomeDoUsuarioInvalido_Variant3()
+        {
+#line 34
+this.CriarNovaContaComNomeDoUsuarioInvalido("teste%", "nomeRealTeste", "usuarioteste@teste.com", "desenvolvedor", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com nome do usuario invalido, Variant 4", SourceLine=42)]
+        public virtual void CriarNovaContaComNomeDoUsuarioInvalido_Variant4()
+        {
+#line 34
+this.CriarNovaContaComNomeDoUsuarioInvalido("teste#", "nomeRealTeste", "usuarioteste@teste.com", "gerente", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com nome do usuario invalido, Variant 5", SourceLine=42)]
+        public virtual void CriarNovaContaComNomeDoUsuarioInvalido_Variant5()
+        {
+#line 34
+this.CriarNovaContaComNomeDoUsuarioInvalido("", "nomeRealTeste", "usuarioteste@teste.com", "administrador", ((string[])(null)));
+#line hidden
+        }
+        
         public virtual void CriarNovaContaComE_MailInvalido(string uSERNAME, string rEAL_NAME, string e_MAIL, string aCCESS_LEVEL, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar nova conta com e-mail invalido", null, exampleTags);
@@ -196,6 +273,36 @@ this.FeatureBackground();
  testRunner.And("o novo usuario nao dever ter sido criado corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com e-mail invalido, Variant 0", SourceLine=59)]
+        public virtual void CriarNovaContaComE_MailInvalido_Variant0()
+        {
+#line 51
+this.CriarNovaContaComE_MailInvalido("usuarioTeste", "nomeRealTeste", "teste.com", "vizualizador", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com e-mail invalido, Variant 1", SourceLine=59)]
+        public virtual void CriarNovaContaComE_MailInvalido_Variant1()
+        {
+#line 51
+this.CriarNovaContaComE_MailInvalido("usuarioTeste", "nomeRealTeste", "@teste.com", "relator", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar nova conta com e-mail invalido, Variant 2", SourceLine=59)]
+        public virtual void CriarNovaContaComE_MailInvalido_Variant2()
+        {
+#line 51
+this.CriarNovaContaComE_MailInvalido("usuarioTeste", "nomeRealTeste", "usuarioteste", "atualizador", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.TestRunCleanup()]
+        public virtual void TestRunCleanup()
+        {
+            TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
         }
     }
 }

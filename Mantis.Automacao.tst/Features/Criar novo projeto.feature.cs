@@ -17,8 +17,8 @@ namespace Mantis.Automacao.tst.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Criar novo projeto")]
+    [TechTalk.SpecRun.FeatureAttribute("Criar novo projeto", Description="\tComo: Administrador\r\n\tQuero: Criar um novo projeto\r\n\tPara: Pessoas trabalharem n" +
+        "ele", SourceFile="Features\\Criar novo projeto.feature", SourceLine=0)]
     public partial class CriarNovoProjetoFeature
     {
         
@@ -27,7 +27,7 @@ namespace Mantis.Automacao.tst.Features
 #line 1 "Criar novo projeto.feature"
 #line hidden
         
-        [NUnit.Framework.OneTimeSetUpAttribute()]
+        [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
@@ -36,19 +36,18 @@ namespace Mantis.Automacao.tst.Features
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.OneTimeTearDownAttribute()]
+        [TechTalk.SpecRun.FeatureCleanup()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
-        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
-        [NUnit.Framework.TearDownAttribute()]
+        [TechTalk.SpecRun.ScenarioCleanup()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -57,7 +56,6 @@ namespace Mantis.Automacao.tst.Features
         public virtual void ScenarioInitialize(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioInitialize(scenarioInfo);
-            testRunner.ScenarioContext.ScenarioContainer.RegisterInstanceAs<NUnit.Framework.TestContext>(NUnit.Framework.TestContext.CurrentContext);
         }
         
         public virtual void ScenarioStart()
@@ -78,13 +76,6 @@ namespace Mantis.Automacao.tst.Features
 #line hidden
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Criar um novo projeto")]
-        [NUnit.Framework.TestCaseAttribute("projetoTeste", "desenvolvimento", "público", "Projeto para teste do MantisBT", null)]
-        [NUnit.Framework.TestCaseAttribute("projetoTeste", "release", "público", "Projeto para teste do MantisBT", null)]
-        [NUnit.Framework.TestCaseAttribute("projetoTeste", "estável", "público", "Projeto para teste do MantisBT", null)]
-        [NUnit.Framework.TestCaseAttribute("projetoTeste", "obsoleto", "público", "Projeto para teste do MantisBT", null)]
-        [NUnit.Framework.TestCaseAttribute("projetoTeste", "desenvolvimento", "privado", "Projeto para teste do MantisBT", null)]
         public virtual void CriarUmNovoProjeto(string nOME_PROJETO, string eSTADO, string vISIBILIDADE, string dESCICAO, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar um novo projeto", null, exampleTags);
@@ -94,7 +85,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
 this.FeatureBackground();
 #line 12
- testRunner.And("entre na tela de criar novo projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("eu entre na tela de criar novo projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 13
  testRunner.When(string.Format("eu preencher as informacoes do novo projeto: \'{0}\', \'{1}\', \'{2}\', \'<DESCRICAO>\'", nOME_PROJETO, eSTADO, vISIBILIDADE), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
@@ -107,8 +98,47 @@ this.FeatureBackground();
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Criar um novo projeto com nome do projeto repetido")]
+        [TechTalk.SpecRun.ScenarioAttribute("Criar um novo projeto, Variant 0", SourceLine=19)]
+        public virtual void CriarUmNovoProjeto_Variant0()
+        {
+#line 11
+this.CriarUmNovoProjeto("projetoTeste", "desenvolvimento", "público", "Projeto para teste do MantisBT", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar um novo projeto, Variant 1", SourceLine=19)]
+        public virtual void CriarUmNovoProjeto_Variant1()
+        {
+#line 11
+this.CriarUmNovoProjeto("projetoTeste", "release", "público", "Projeto para teste do MantisBT", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar um novo projeto, Variant 2", SourceLine=19)]
+        public virtual void CriarUmNovoProjeto_Variant2()
+        {
+#line 11
+this.CriarUmNovoProjeto("projetoTeste", "estável", "público", "Projeto para teste do MantisBT", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar um novo projeto, Variant 3", SourceLine=19)]
+        public virtual void CriarUmNovoProjeto_Variant3()
+        {
+#line 11
+this.CriarUmNovoProjeto("projetoTeste", "obsoleto", "público", "Projeto para teste do MantisBT", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar um novo projeto, Variant 4", SourceLine=19)]
+        public virtual void CriarUmNovoProjeto_Variant4()
+        {
+#line 11
+this.CriarUmNovoProjeto("projetoTeste", "desenvolvimento", "privado", "Projeto para teste do MantisBT", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Criar um novo projeto com nome do projeto repetido", SourceLine=25)]
         public virtual void CriarUmNovoProjetoComNomeDoProjetoRepetido()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar um novo projeto com nome do projeto repetido", null, ((string[])(null)));
@@ -121,7 +151,7 @@ this.FeatureBackground();
  testRunner.And("exista um projeto criado com os dados: \'nomeRepetido\', \'desenvolvimento\', \'públic" +
                     "o\', \'Projeto para teste do MantisBT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 28
- testRunner.And("entre na tela de criar novo projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("eu entre na tela de criar novo projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 29
  testRunner.When("eu preencher as informacoes do novo projeto: \'nomeRepetido\', \'desenvolvimento\', \'" +
                     "público\', \'Projeto para teste do MantisBT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -131,6 +161,12 @@ this.FeatureBackground();
  testRunner.Then("eu devo ver a mensagem de que o projeto nao foi criado corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.TestRunCleanup()]
+        public virtual void TestRunCleanup()
+        {
+            TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
         }
     }
 }

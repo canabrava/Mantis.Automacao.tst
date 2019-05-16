@@ -31,6 +31,5 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
 
             createProjectPage.ClickAddProject();
         }
-
     }
 }

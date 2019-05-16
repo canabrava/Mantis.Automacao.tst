@@ -17,9 +17,9 @@ namespace Mantis.Automacao.tst.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Login")]
-    [NUnit.Framework.CategoryAttribute("login")]
+    [TechTalk.SpecRun.FeatureAttribute("Login", new string[] {
+            "login"}, Description="\tComo: Usuário\r\n\tQuero: Logar no sistema\r\n\tPara: Ter acesso às minhas informações" +
+        "", SourceFile="Features\\Login.feature", SourceLine=1)]
     public partial class LoginFeature
     {
         
@@ -28,7 +28,7 @@ namespace Mantis.Automacao.tst.Features
 #line 1 "Login.feature"
 #line hidden
         
-        [NUnit.Framework.OneTimeSetUpAttribute()]
+        [TechTalk.SpecRun.FeatureInitialize()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
@@ -38,19 +38,18 @@ namespace Mantis.Automacao.tst.Features
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.OneTimeTearDownAttribute()]
+        [TechTalk.SpecRun.FeatureCleanup()]
         public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
-        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
-        [NUnit.Framework.TearDownAttribute()]
+        [TechTalk.SpecRun.ScenarioCleanup()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -59,7 +58,6 @@ namespace Mantis.Automacao.tst.Features
         public virtual void ScenarioInitialize(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioInitialize(scenarioInfo);
-            testRunner.ScenarioContext.ScenarioContainer.RegisterInstanceAs<NUnit.Framework.TestContext>(NUnit.Framework.TestContext.CurrentContext);
         }
         
         public virtual void ScenarioStart()
@@ -72,8 +70,7 @@ namespace Mantis.Automacao.tst.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Entrar com caracteres válidos no nome do usuário")]
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com caracteres válidos no nome do usuário", SourceLine=8)]
         public virtual void EntrarComCaracteresValidosNoNomeDoUsuario()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entrar com caracteres válidos no nome do usuário", null, ((string[])(null)));
@@ -90,8 +87,7 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Entrar com carecteres inválidos no nome do usuário")]
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com carecteres inválidos no nome do usuário", SourceLine=13)]
         public virtual void EntrarComCarecteresInvalidosNoNomeDoUsuario()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entrar com carecteres inválidos no nome do usuário", null, ((string[])(null)));
@@ -108,8 +104,7 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Entrar com nome do usuário e senha corretos")]
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário e senha corretos", SourceLine=18)]
         public virtual void EntrarComNomeDoUsuarioESenhaCorretos()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entrar com nome do usuário e senha corretos", null, ((string[])(null)));
@@ -130,10 +125,6 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Entrar com nome do usuário ou senha errados")]
-        [NUnit.Framework.TestCaseAttribute("administrator", "12345", null)]
-        [NUnit.Framework.TestCaseAttribute("usuarioerrado", "administrator", null)]
         public virtual void EntrarComNomeDoUsuarioOuSenhaErrados(string uSERNAME, string pASSWORD, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entrar com nome do usuário ou senha errados", null, exampleTags);
@@ -152,6 +143,28 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Then("eu devo ver uma mensagem avisando que houve um erro no login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário ou senha errados, administrator", SourceLine=34)]
+        public virtual void EntrarComNomeDoUsuarioOuSenhaErrados_Administrator()
+        {
+#line 26
+this.EntrarComNomeDoUsuarioOuSenhaErrados("administrator", "12345", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário ou senha errados, usuarioerrado", SourceLine=34)]
+        public virtual void EntrarComNomeDoUsuarioOuSenhaErrados_Usuarioerrado()
+        {
+#line 26
+this.EntrarComNomeDoUsuarioOuSenhaErrados("usuarioerrado", "administrator", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.TestRunCleanup()]
+        public virtual void TestRunCleanup()
+        {
+            TechTalk.SpecFlow.TestRunnerManager.GetTestRunner().OnTestRunEnd();
         }
     }
 }

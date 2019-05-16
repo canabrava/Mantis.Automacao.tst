@@ -6,7 +6,7 @@ using TechTalk.SpecFlow;
 namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
 {
     [Binding]
-    class ConfirmationMessagesPageSteps
+    class SuccessMessagePageSteps
     {
         World context = World.GetInstance();
 

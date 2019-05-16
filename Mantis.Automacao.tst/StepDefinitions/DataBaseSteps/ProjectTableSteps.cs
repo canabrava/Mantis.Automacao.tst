@@ -33,5 +33,11 @@ namespace Mantis.Automacao.tst.StepDefinitions.DataBaseSteps
             Assertions.AssertTrue(CreateProject.IsNewProjectInDataBase(context.GetNewProject()));
         }
 
+        [Then(@"o projeto deve ter sido apagado")]
+        public void ThenOProjetoDeveTerSidoApagado()
+        {
+            Assertions.AssertFalse(CreateProject.IsNewProjectInDataBase(context.GetNewProject()));
+        }
+
     }
 }

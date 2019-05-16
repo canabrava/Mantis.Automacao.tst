@@ -9,7 +9,7 @@ Background:
 	Given eu esteja logado como administrador
 
 Scenario Outline: Criar um novo projeto
-	And entre na tela de criar novo projeto
+	And eu entre na tela de criar novo projeto
 	When eu preencher as informacoes do novo projeto: '<NOME_PROJETO>', '<ESTADO>', '<VISIBILIDADE>', '<DESCRICAO>'
 	And clicar para criar um novo projeto
 	Then eu devo ver a mensagem de que o projeto foi criado corretamente
@@ -25,7 +25,7 @@ Scenario Outline: Criar um novo projeto
 
 Scenario: Criar um novo projeto com nome do projeto repetido
 	And exista um projeto criado com os dados: 'nomeRepetido', 'desenvolvimento', 'público', 'Projeto para teste do MantisBT'
-	And entre na tela de criar novo projeto
+	And eu entre na tela de criar novo projeto
 	When eu preencher as informacoes do novo projeto: 'nomeRepetido', 'desenvolvimento', 'público', 'Projeto para teste do MantisBT'
 	And clicar para criar um novo projeto
 	Then eu devo ver a mensagem de que o projeto nao foi criado corretamente

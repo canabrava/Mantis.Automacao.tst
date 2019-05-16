@@ -42,6 +42,7 @@ namespace Mantis.Automacao.tst.DBSteps
 
             return result.AsEnumerable().Select(x => new ProjectModel()
             {
+                id = x.Field<int>("idt_project"),
                 name = x.Field<string>("name"),
                 status = x.Field<string>("status"),
                 viewState = x.Field<string>("status"),

@@ -28,6 +28,17 @@ namespace Mantis.Automacao.tst.Flows
             manageProjectPage.ClickCreateNewProject();
         }
 
+        public static void EnterManageProjectPage(int projectId)
+        {
+            var userPage = new UserPage();
+            var manageOverviewPage = new ManageOverviewPage();
+            var manageProjectPage = new ManageProjectPage();
+
+            userPage.sideMenu.ClickManageOverview();
+            manageOverviewPage.manageMenu.ClickManageProjects();
+            manageProjectPage.ClickProject(projectId);
+        }
+
 
     }
 }

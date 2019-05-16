@@ -18,6 +18,10 @@ namespace Mantis.Automacao.tst.Pages
             Click(btnCreateNewProject);
         }
 
+        public void ClickProject(int projectID)
+        {
+            Click(By.XPath("//*[@href='manage_proj_edit_page.php?project_id=" + projectID + "']"));
+        }
         #endregion
     }
 }
