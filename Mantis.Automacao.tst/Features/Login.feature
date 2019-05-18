@@ -3,7 +3,7 @@ Feature: Login
 	
 	Como: Usuário
 	Quero: Logar no sistema
-	Para: Ter acesso às minhas informações
+	Para que:: Ter acesso às minhas informações
 
 
 Scenario: Entrar com caracteres válidos no nome do usuário 

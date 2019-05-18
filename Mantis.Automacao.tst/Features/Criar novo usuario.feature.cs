@@ -17,8 +17,8 @@ namespace Mantis.Automacao.tst.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Criar nova conta", Description="\tComo: Administrador\r\n\tQuero: Criar nova conta\r\n\tPara: Que outrar pessoas possam " +
-        "usar o Mantis", SourceFile="Features\\Criar novo usuario.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("Criar nova conta", Description="\tComo: Administrador\r\n\tQuero: Criar nova conta\r\n\tPara que:: Que outrar pessoas po" +
+        "ssam usar o Mantis", SourceFile="Features\\Criar novo usuario.feature", SourceLine=0)]
     public partial class CriarNovaContaFeature
     {
         
@@ -31,8 +31,8 @@ namespace Mantis.Automacao.tst.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Criar nova conta", "\tComo: Administrador\r\n\tQuero: Criar nova conta\r\n\tPara: Que outrar pessoas possam " +
-                    "usar o Mantis", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Criar nova conta", "\tComo: Administrador\r\n\tQuero: Criar nova conta\r\n\tPara que:: Que outrar pessoas po" +
+                    "ssam usar o Mantis", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

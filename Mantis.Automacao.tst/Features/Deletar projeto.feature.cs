@@ -79,10 +79,10 @@ namespace Mantis.Automacao.tst.Features
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Deletar Projeto", SourceLine=10)]
+        [TechTalk.SpecRun.ScenarioAttribute("Deletar projeto", SourceLine=10)]
         public virtual void DeletarProjeto()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deletar Projeto", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deletar projeto", null, ((string[])(null)));
 #line 11
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -96,6 +96,27 @@ this.FeatureBackground();
  testRunner.And("confirmar a que o projeto será deletado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 15
  testRunner.Then("o projeto deve ter sido apagado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Não confirmar que o projeto deve ser deletado", SourceLine=16)]
+        public virtual void NaoConfirmarQueOProjetoDeveSerDeletado()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Não confirmar que o projeto deve ser deletado", null, ((string[])(null)));
+#line 17
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 7
+this.FeatureBackground();
+#line 18
+ testRunner.Given("eu entre na tela de gerenciar o projeto \'nomeProjeto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 19
+ testRunner.When("eu clicar em apagar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 20
+ testRunner.And("clicar em voltar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 21
+ testRunner.And("o projeto deve estar salvo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

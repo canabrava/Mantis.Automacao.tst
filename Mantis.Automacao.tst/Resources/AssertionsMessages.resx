@@ -123,6 +123,12 @@
   <data name="AmInLoginPageSuccess" xml:space="preserve">
     <value>The browser is in the login page!</value>
   </data>
+  <data name="AmInManageProjectPageFail" xml:space="preserve">
+    <value>The browser is not in the manage project page!</value>
+  </data>
+  <data name="AmInManageProjectPageSuccess" xml:space="preserve">
+    <value>The browser is in the manage project page!</value>
+  </data>
   <data name="AmInPasswordPageFail" xml:space="preserve">
     <value>The browser is not in the password page!</value>
   </data>

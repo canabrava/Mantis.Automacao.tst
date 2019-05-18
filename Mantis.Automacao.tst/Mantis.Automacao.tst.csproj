@@ -124,7 +124,7 @@
     <Compile Include="Bases\PageBase.cs" />
     <Compile Include="DBSteps\ProjectTableDAO.cs" />
     <Compile Include="DBSteps\UserTableDAO.cs" />
-    <Compile Include="Flows\CreateProject.cs" />
+    <Compile Include="Flows\Project.cs" />
     <Compile Include="Flows\CreateUser.cs" />
     <Compile Include="Flows\Login.cs" />
     <Compile Include="Flows\Navigation.cs" />
@@ -168,13 +168,14 @@
     <Compile Include="StepDefinitions\NavigateSteps\LoginSteps.cs" />
     <Compile Include="StepDefinitions\NavigateSteps\UserNavigationSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ConfirmationPageSteps.cs" />
+    <Compile Include="StepDefinitions\PageSteps\ManageProjectPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\SuccessMessagePageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ErrorMessagePageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\LoginPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\LoginPasswordPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\CreateProjectsPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\CreateUserPageSteps.cs" />
-    <Compile Include="StepDefinitions\PageSteps\ManageProjectPage.cs" />
+    <Compile Include="StepDefinitions\PageSteps\ProjectPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\UserPageSteps.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +186,7 @@
     <None Include="Features\Criar novo usuario.feature" />
     <None Include="Features\Deletar projeto.feature" />
     <None Include="Features\Login.feature" />
+    <None Include="Features\Alterar projeto.feature" />
     <None Include="packages.config" />
     <None Include="runtests.cmd" />
     <None Include="SpecRunTestProfile.xsd">

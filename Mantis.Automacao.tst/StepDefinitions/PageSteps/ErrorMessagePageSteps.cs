@@ -27,11 +27,12 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
             Assertions.AssertTrue(errorPage.AmInInvalidUsernamePage());
         }
 
-        [StepDefinition(@"eu devo ver a mensagem de que o projeto nao foi criado corretamente")]
-        public void ThenEuDevoVerAMensagemDeQueOProjetoNaoFoiCriadoCorretamente()
+        [StepDefinition(@"eu devo ver a mensagem de que já existe um projeto com esse nome")]
+        public void ThenEuDevoVerAMensagemDeQueJaExisteUmProjetoComEsseNome()
         {
             Assertions.AssertTrue(errorPage.AmInProjectAlreadyExistsPage());
         }
+
 
 
     }

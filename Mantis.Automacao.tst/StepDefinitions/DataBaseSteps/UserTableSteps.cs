@@ -13,13 +13,13 @@ namespace Mantis.Automacao.tst.StepDefinitions.DataBaseSteps
         [StepDefinition(@"o novo usuario dever ter sido criado corretamente")]
         public void ThenONovoUsuarioDeverTerSidoCriadoCorretamente()
         {
-           Assertions.AssertTrue(CreateUser.IsCreatedUserInDataBase(context.GetNewUser()));
+           Assertions.AssertTrue(CreateUser.IsCreatedUserInDataBase(context.GetUser()));
         }
 
         [StepDefinition(@"o novo usuario nao dever ter sido criado corretamente")]
         public void ThenONovoUsuarioNaoDeverTerSidoCriadoCorretamente()
         {
-            Assertions.AssertFalse(CreateUser.IsCreatedUserInDataBase(context.GetNewUser()));
+            Assertions.AssertFalse(CreateUser.IsCreatedUserInDataBase(context.GetUser()));
         }
 
     }

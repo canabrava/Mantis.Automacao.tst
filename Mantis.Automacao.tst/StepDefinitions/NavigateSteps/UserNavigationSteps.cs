@@ -25,7 +25,7 @@ namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
         {
             var projectTableDAO = new ProjectTableDAO();
 
-            Navigation.EnterManageProjectPage(projectTableDAO.ReturnProject(nomeProjeto).id);
+            Navigation.EnterProjectPage(projectTableDAO.ReturnProject(nomeProjeto).id);
         }
 
         [StepDefinition(@"clicar em voltar")]

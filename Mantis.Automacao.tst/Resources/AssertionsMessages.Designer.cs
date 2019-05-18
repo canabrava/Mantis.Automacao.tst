@@ -79,6 +79,24 @@ namespace Mantis.Automacao.tst.Resources {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The browser is not in the manage project page!.
+        /// </summary>
+        internal static string AmInManageProjectPageFail {
+            get {
+                return ResourceManager.GetString("AmInManageProjectPageFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The browser is in the manage project page!.
+        /// </summary>
+        internal static string AmInManageProjectPageSuccess {
+            get {
+                return ResourceManager.GetString("AmInManageProjectPageSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The browser is not in the password page!.
         /// </summary>
         internal static string AmInPasswordPageFail {

@@ -14,14 +14,14 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
         [StepDefinition(@"eu preencher as informacoes do novo projeto: '(.*)', '(.*)', '(.*)', '(.*)'")]
         public void WhenEuPreencherAsInformacoesDoNovoProjeto(string nomeProjeto, string estado, string visibilidade, string descricao)
         {
-            context.SetNewProject(new ProjectModel() {
+            context.SetProject(new ProjectModel() {
                 name = nomeProjeto,
                 status = estado,
                 viewState = visibilidade,
                 description = descricao
             });
 
-            CreateProject.FillNewProjectInformation(context.GetNewProject());
+            Project.FillNewProjectInformation(context.GetProject());
         }
 
         [StepDefinition(@"clicar para criar um novo projeto")]
@@ -31,5 +31,6 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
 
             createProjectPage.ClickAddProject();
         }
+
     }
 }

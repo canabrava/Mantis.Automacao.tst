@@ -2,7 +2,7 @@
 
 	Como: Administrador
 	Quero: Criar nova conta
-	Para: Que outrar pessoas possam usar o Mantis
+	Para que:: Que outrar pessoas possam usar o Mantis
 
 Background: 
 	Given eu esteja logado como administrador

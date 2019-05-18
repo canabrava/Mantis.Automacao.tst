@@ -5,7 +5,7 @@ using Mantis.Automacao.tst.Resources;
 
 namespace Mantis.Automacao.tst.Flows
 {
-    public static class CreateProject
+    public static class Project
     {
         public static void FillNewProjectInformation(ProjectModel newProject)
         {
@@ -31,6 +31,16 @@ namespace Mantis.Automacao.tst.Flows
                 message = isNewProjectInDataBase ? AssertionsMessages.ProjectCreatedSuccess : AssertionsMessages.ProjectCreatedFail
             };
 
+        }
+
+        public static void FillEditedProjectInformation(ProjectModel newProject)
+        {
+            var projectPage = new ProjectPage();
+
+            projectPage.FillProjectName(newProject.name);
+            projectPage.FillProjectStatus(newProject.status);
+            projectPage.FillViewState(newProject.viewState);
+            projectPage.FillProjectDescription(newProject.description);
         }
 
     }

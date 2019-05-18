@@ -18,8 +18,8 @@ namespace Mantis.Automacao.tst.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [TechTalk.SpecRun.FeatureAttribute("Login", new string[] {
-            "login"}, Description="\tComo: Usuário\r\n\tQuero: Logar no sistema\r\n\tPara: Ter acesso às minhas informações" +
-        "", SourceFile="Features\\Login.feature", SourceLine=1)]
+            "login"}, Description="\tComo: Usuário\r\n\tQuero: Logar no sistema\r\n\tPara que:: Ter acesso às minhas inform" +
+        "ações", SourceFile="Features\\Login.feature", SourceLine=1)]
     public partial class LoginFeature
     {
         
@@ -32,8 +32,8 @@ namespace Mantis.Automacao.tst.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "\tComo: Usuário\r\n\tQuero: Logar no sistema\r\n\tPara: Ter acesso às minhas informações" +
-                    "", ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Login", "\tComo: Usuário\r\n\tQuero: Logar no sistema\r\n\tPara que:: Ter acesso às minhas inform" +
+                    "ações", ProgrammingLanguage.CSharp, new string[] {
                         "login"});
             testRunner.OnFeatureStart(featureInfo);
         }

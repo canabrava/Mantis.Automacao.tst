@@ -31,8 +31,8 @@ namespace Mantis.Automacao.tst.Helpers
         #region Stored Variables
 
         private string userName = string.Empty;
-        private UserModel newUser = new UserModel();
-        private ProjectModel newProject = new ProjectModel();
+        private UserModel user = new UserModel();
+        private ProjectModel project = new ProjectModel();
 
         #endregion
 
@@ -48,24 +48,24 @@ namespace Mantis.Automacao.tst.Helpers
             return userName;
         }
 
-        public void SetNewUser(UserModel newUser)
+        public void SetUser(UserModel newUser)
         {
-            this.newUser = newUser;
+            this.user = newUser;
         }
 
-        public UserModel GetNewUser()
+        public UserModel GetUser()
         {
-            return newUser;
+            return user;
         }
 
-        public void SetNewProject(ProjectModel newProject)
+        public void SetProject(ProjectModel newProject)
         {
-            this.newProject = newProject;
+            this.project = newProject;
         }
 
-        public ProjectModel GetNewProject()
+        public ProjectModel GetProject()
         {
-            return newProject;
+            return project;
         }
 
         #endregion

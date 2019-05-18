@@ -17,8 +17,8 @@ namespace Mantis.Automacao.tst.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Criar novo projeto", Description="\tComo: Administrador\r\n\tQuero: Criar um novo projeto\r\n\tPara: Pessoas trabalharem n" +
-        "ele", SourceFile="Features\\Criar novo projeto.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("Criar novo projeto", Description="\tComo: Administrador\r\n\tQuero: Criar um novo projeto\r\n\tPara que:: Pessoas trabalha" +
+        "rem nele", SourceFile="Features\\Criar novo projeto.feature", SourceLine=0)]
     public partial class CriarNovoProjetoFeature
     {
         
@@ -31,8 +31,8 @@ namespace Mantis.Automacao.tst.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Criar novo projeto", "\tComo: Administrador\r\n\tQuero: Criar um novo projeto\r\n\tPara: Pessoas trabalharem n" +
-                    "ele", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Criar novo projeto", "\tComo: Administrador\r\n\tQuero: Criar um novo projeto\r\n\tPara que:: Pessoas trabalha" +
+                    "rem nele", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -93,7 +93,7 @@ this.FeatureBackground();
 #line 15
  testRunner.Then("eu devo ver a mensagem de que o projeto foi criado corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 16
- testRunner.And("o novo projeto deve ter sido criado corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("o projeto deve estar salvo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -158,7 +158,7 @@ this.FeatureBackground();
 #line 30
  testRunner.And("clicar para criar um novo projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 31
- testRunner.Then("eu devo ver a mensagem de que o projeto nao foi criado corretamente", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("eu devo ver a mensagem de que já existe um projeto com esse nome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

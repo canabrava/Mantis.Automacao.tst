@@ -15,7 +15,7 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
         {
             var successMessagePage = new SuccessMessagePage();
 
-            Assertions.AssertTrue(successMessagePage.AmInUserCreatedSuccessPage(context.GetNewUser().accessLevel));
+            Assertions.AssertTrue(successMessagePage.AmInUserCreatedSuccessPage(context.GetUser().accessLevel));
         }
 
         [StepDefinition(@"eu devo ver a mensagem de que o projeto foi criado corretamente")]
