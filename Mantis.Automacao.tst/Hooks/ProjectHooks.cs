@@ -1,7 +1,7 @@
 ﻿using Mantis.Automacao.tst.DBSteps;
 using TechTalk.SpecFlow;
 
-namespace Mantis.Automacao.tst.Helpers
+namespace Mantis.Automacao.tst.Hooks
 {
     [Binding]
     class ProjectHooks

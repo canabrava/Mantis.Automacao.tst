@@ -135,6 +135,12 @@
   <data name="AmInPasswordPageSuccess" xml:space="preserve">
     <value>The browser is in the password page!</value>
   </data>
+  <data name="CategoryCreatedFail" xml:space="preserve">
+    <value>The category was not created successfully!</value>
+  </data>
+  <data name="CategoryCreatedSucces" xml:space="preserve">
+    <value>The category was created successfully!</value>
+  </data>
   <data name="ErrorDisplayedFail" xml:space="preserve">
     <value>The correct error was not displayed!</value>
   </data>

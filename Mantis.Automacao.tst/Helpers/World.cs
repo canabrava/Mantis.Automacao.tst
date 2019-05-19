@@ -33,6 +33,7 @@ namespace Mantis.Automacao.tst.Helpers
         private string userName = string.Empty;
         private UserModel user = new UserModel();
         private ProjectModel project = new ProjectModel();
+        private string categoryName = string.Empty;
 
         #endregion
 
@@ -66,6 +67,16 @@ namespace Mantis.Automacao.tst.Helpers
         public ProjectModel GetProject()
         {
             return project;
+        }
+
+        public void SetCategory(string categoryName)
+        {
+            this.categoryName = categoryName;
+        }
+
+        public string GetCategory()
+        {
+            return categoryName;
         }
 
         #endregion

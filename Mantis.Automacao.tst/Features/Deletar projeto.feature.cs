@@ -17,8 +17,9 @@ namespace Mantis.Automacao.tst.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Deletar projeto", Description="\tComo: Administrador\r\n\tQuero: Deletar um novo projeto\r\n\tPara que: Pessoas não tra" +
-        "balharem mais nele", SourceFile="Features\\Deletar projeto.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("Deletar projeto", new string[] {
+            "Projetos"}, Description="\tComo: Administrador\r\n\tQuero: Deletar um novo projeto\r\n\tPara que: Pessoas não tra" +
+        "balharem mais nele", SourceFile="Features\\Deletar projeto.feature", SourceLine=1)]
     public partial class DeletarProjetoFeature
     {
         
@@ -32,7 +33,8 @@ namespace Mantis.Automacao.tst.Features
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Deletar projeto", "\tComo: Administrador\r\n\tQuero: Deletar um novo projeto\r\n\tPara que: Pessoas não tra" +
-                    "balharem mais nele", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "balharem mais nele", ProgrammingLanguage.CSharp, new string[] {
+                        "Projetos"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -70,52 +72,52 @@ namespace Mantis.Automacao.tst.Features
         
         public virtual void FeatureBackground()
         {
-#line 7
 #line 8
+#line 9
  testRunner.Given("exista um projeto criado com os dados: \'nomeProjeto\', \'desenvolvimento\', \'público" +
                     "\', \'Projeto para teste do MantisBT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
+#line 10
  testRunner.And("eu esteja logado como administrador", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Deletar projeto", SourceLine=10)]
+        [TechTalk.SpecRun.ScenarioAttribute("Deletar projeto", SourceLine=11)]
         public virtual void DeletarProjeto()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Deletar projeto", null, ((string[])(null)));
-#line 11
+#line 12
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 7
+#line 8
 this.FeatureBackground();
-#line 12
- testRunner.Given("eu entre na tela de gerenciar o projeto \'nomeProjeto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 13
- testRunner.When("eu clicar em apagar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("eu entre na tela de gerenciar o projeto \'nomeProjeto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
- testRunner.And("confirmar a que o projeto será deletado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("eu clicar em apagar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 15
+ testRunner.And("confirmar a que o projeto será deletado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 16
  testRunner.Then("o projeto deve ter sido apagado", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Não confirmar que o projeto deve ser deletado", SourceLine=16)]
+        [TechTalk.SpecRun.ScenarioAttribute("Não confirmar que o projeto deve ser deletado", SourceLine=17)]
         public virtual void NaoConfirmarQueOProjetoDeveSerDeletado()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Não confirmar que o projeto deve ser deletado", null, ((string[])(null)));
-#line 17
+#line 18
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 7
+#line 8
 this.FeatureBackground();
-#line 18
- testRunner.Given("eu entre na tela de gerenciar o projeto \'nomeProjeto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 19
- testRunner.When("eu clicar em apagar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("eu entre na tela de gerenciar o projeto \'nomeProjeto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 20
- testRunner.And("clicar em voltar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("eu clicar em apagar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 21
+ testRunner.And("clicar em voltar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 22
  testRunner.And("o projeto deve estar salvo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

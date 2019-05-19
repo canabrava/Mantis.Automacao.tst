@@ -13,7 +13,7 @@ namespace Mantis.Automacao.tst.Pages
 
         By btnCreateNewProject = By.XPath("//*[contains(text(), 'Criar Novo Projeto')]");
 
-        By btnAddCategoru = By.XPath("//*[@value='Adicionar Categoria']");
+        By btnAddCategory = By.XPath("//*[@value='Adicionar Categoria']");
 
 
         #endregion
@@ -28,6 +28,16 @@ namespace Mantis.Automacao.tst.Pages
         public void ClickProject(int projectID)
         {
             Click(By.XPath("//*[@href='manage_proj_edit_page.php?project_id=" + projectID + "']"));
+        }
+
+        public void ClickAddCategory()
+        {
+            Click(btnAddCategory);
+        }
+
+        public void FillCategory(string category)
+        {
+            SendKeys(fieldCategory, category);
         }
 
         public ResultModel AmInManageProjectPage()

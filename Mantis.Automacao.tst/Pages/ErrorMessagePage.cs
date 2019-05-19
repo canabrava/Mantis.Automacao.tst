@@ -33,6 +33,11 @@ namespace Mantis.Automacao.tst.Pages
             return ErrorPageValidation(ReturnIfElementIsDisplayed(By.XPath("//*[contains(text(), 'APPLICATION ERROR #701')]")));
         }
 
+        public ResultModel AmInCategoryAlreadyExistsPage()
+        {
+            return ErrorPageValidation(ReturnIfElementIsDisplayed(By.XPath("//*[contains(text(), 'APPLICATION ERROR #1500')]")));
+        }
+
         #endregion
 
         private ResultModel ErrorPageValidation(bool validation)

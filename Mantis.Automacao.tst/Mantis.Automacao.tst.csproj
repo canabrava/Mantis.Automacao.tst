@@ -122,8 +122,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bases\PageBase.cs" />
+    <Compile Include="DBSteps\CategoryTableDAO.cs" />
     <Compile Include="DBSteps\ProjectTableDAO.cs" />
     <Compile Include="DBSteps\UserTableDAO.cs" />
+    <Compile Include="Flows\Category.cs" />
     <Compile Include="Flows\Project.cs" />
     <Compile Include="Flows\CreateUser.cs" />
     <Compile Include="Flows\Login.cs" />
@@ -132,7 +134,8 @@
     <Compile Include="Helpers\DataBaseHelper\DataBaseHelper.cs" />
     <Compile Include="Helpers\DataBaseHelper\DbConnection\DBMantisDAL.cs" />
     <Compile Include="Helpers\DriverFactory.cs" />
-    <Compile Include="Helpers\ProjectHooks.cs" />
+    <Compile Include="Hooks\CategoryHooks.cs" />
+    <Compile Include="Hooks\ProjectHooks.cs" />
     <Compile Include="Helpers\ReportHelper\Assertions.cs" />
     <Compile Include="Helpers\ReportHelper\LogTracer.cs" />
     <Compile Include="Helpers\ReportHelper\ReportingHelper.cs" />
@@ -164,10 +167,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssertionsMessages.resx</DependentUpon>
     </Compile>
+    <Compile Include="StepDefinitions\DataBaseSteps\CategoryTableSteps.cs" />
     <Compile Include="StepDefinitions\DataBaseSteps\ProjectTableSteps.cs" />
     <Compile Include="StepDefinitions\DataBaseSteps\UserTableSteps.cs" />
     <Compile Include="StepDefinitions\NavigateSteps\LoginSteps.cs" />
-    <Compile Include="StepDefinitions\NavigateSteps\UserNavigationSteps.cs" />
+    <Compile Include="StepDefinitions\NavigateSteps\NavigationSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ConfirmationPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ManageProjectPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\SuccessMessagePageSteps.cs" />

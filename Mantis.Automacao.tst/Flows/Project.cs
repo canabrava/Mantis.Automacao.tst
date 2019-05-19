@@ -30,7 +30,6 @@ namespace Mantis.Automacao.tst.Flows
                 result = isNewProjectInDataBase,
                 message = isNewProjectInDataBase ? AssertionsMessages.ProjectCreatedSuccess : AssertionsMessages.ProjectCreatedFail
             };
-
         }
 
         public static void FillEditedProjectInformation(ProjectModel newProject)

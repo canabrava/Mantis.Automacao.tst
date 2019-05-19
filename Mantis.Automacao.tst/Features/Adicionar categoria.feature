@@ -19,3 +19,9 @@ Scenario: Adicionar uma categoria com nome repetido
 	When eu preencher o nome da categoria com 'nomeCategoria'
 	And clicar em adicionar categoria
 	Then eu devo ver a mensagem de que já existe uma categiria com esse nome
+  
+        
+        
+     
+        
+

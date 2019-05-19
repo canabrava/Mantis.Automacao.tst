@@ -17,8 +17,9 @@ namespace Mantis.Automacao.tst.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Alterar projeto", Description="\tComo: Administrador\r\n\tQuero: Alterar as informações de um projeto\r\n\tPara que: Es" +
-        "sas informações fiquem corretas", SourceFile="Features\\Alterar projeto.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("Alterar projeto", new string[] {
+            "Projetos"}, Description="\tComo: Administrador\r\n\tQuero: Alterar as informações de um projeto\r\n\tPara que: Es" +
+        "sas informações fiquem corretas", SourceFile="Features\\Alterar projeto.feature", SourceLine=1)]
     public partial class AlterarProjetoFeature
     {
         
@@ -32,7 +33,8 @@ namespace Mantis.Automacao.tst.Features
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Alterar projeto", "\tComo: Administrador\r\n\tQuero: Alterar as informações de um projeto\r\n\tPara que: Es" +
-                    "sas informações fiquem corretas", ProgrammingLanguage.CSharp, ((string[])(null)));
+                    "sas informações fiquem corretas", ProgrammingLanguage.CSharp, new string[] {
+                        "Projetos"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -70,11 +72,11 @@ namespace Mantis.Automacao.tst.Features
         
         public virtual void FeatureBackground()
         {
-#line 7
 #line 8
+#line 9
  testRunner.Given("exista um projeto criado com os dados: \'nomeProjeto\', \'desenvolvimento\', \'público" +
                     "\', \'Projeto para teste do MantisBT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 9
+#line 10
  testRunner.And("eu esteja logado como administrador", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
@@ -82,85 +84,85 @@ namespace Mantis.Automacao.tst.Features
         public virtual void AlterarAsInformaccoesDeUmProjeto(string nOME_PROJETO, string eSTADO, string vISIBILIDADE, string dESCRICAO, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alterar as informaçcoes de um projeto", null, exampleTags);
-#line 12
+#line 13
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 7
+#line 8
 this.FeatureBackground();
-#line 13
- testRunner.Given("eu entre na tela de gerenciar o projeto \'nomeProjeto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
- testRunner.When(string.Format("eu entrar com as novas informacoes do projeto: \'{0}\', \'{1}\', \'{2}\', \'{3}\'", nOME_PROJETO, eSTADO, vISIBILIDADE, dESCRICAO), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("eu entre na tela de gerenciar o projeto \'nomeProjeto\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 15
- testRunner.And("eu clicar em atualizar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When(string.Format("eu entrar com as novas informacoes do projeto: \'{0}\', \'{1}\', \'{2}\', \'{3}\'", nOME_PROJETO, eSTADO, vISIBILIDADE, dESCRICAO), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 16
- testRunner.Then("o sistema deve me levar para a pagina de gerenciar projetos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("eu clicar em atualizar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 17
+ testRunner.Then("o sistema deve me levar para a pagina de gerenciar projetos", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 18
  testRunner.And("o projeto deve estar salvo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 0", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 0", SourceLine=21)]
         public virtual void AlterarAsInformaccoesDeUmProjeto_Variant0()
         {
-#line 12
+#line 13
 this.AlterarAsInformaccoesDeUmProjeto("projetoTeste", "desenvolvimento", "público", "Projeto para teste do MantisBT", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 1", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 1", SourceLine=21)]
         public virtual void AlterarAsInformaccoesDeUmProjeto_Variant1()
         {
-#line 12
+#line 13
 this.AlterarAsInformaccoesDeUmProjeto("projetoTeste", "release", "público", "Projeto para teste do MantisBT", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 2", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 2", SourceLine=21)]
         public virtual void AlterarAsInformaccoesDeUmProjeto_Variant2()
         {
-#line 12
+#line 13
 this.AlterarAsInformaccoesDeUmProjeto("projetoTeste", "estável", "público", "Projeto para teste do MantisBT", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 3", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 3", SourceLine=21)]
         public virtual void AlterarAsInformaccoesDeUmProjeto_Variant3()
         {
-#line 12
+#line 13
 this.AlterarAsInformaccoesDeUmProjeto("projetoTeste", "obsoleto", "público", "Projeto para teste do MantisBT", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 4", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Alterar as informaçcoes de um projeto, Variant 4", SourceLine=21)]
         public virtual void AlterarAsInformaccoesDeUmProjeto_Variant4()
         {
-#line 12
+#line 13
 this.AlterarAsInformaccoesDeUmProjeto("projetoTeste", "desenvolvimento", "privado", "Projeto para teste do MantisBT", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Alterar o nome do projeto para o nome de um projeto já existente", SourceLine=26)]
+        [TechTalk.SpecRun.ScenarioAttribute("Alterar o nome do projeto para o nome de um projeto já existente", SourceLine=27)]
         public virtual void AlterarONomeDoProjetoParaONomeDeUmProjetoJaExistente()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alterar o nome do projeto para o nome de um projeto já existente", null, ((string[])(null)));
-#line 27
+#line 28
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 7
+#line 8
 this.FeatureBackground();
-#line 28
+#line 29
  testRunner.Given("exista um projeto criado com os dados: \'nomeProjeto2\', \'desenvolvimento\', \'públic" +
                     "o\', \'Projeto para teste do MantisBT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 29
- testRunner.And("eu entre na tela de gerenciar o projeto \'nomeProjeto2\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
+ testRunner.And("eu entre na tela de gerenciar o projeto \'nomeProjeto2\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 31
  testRunner.When("eu entrar com as novas informacoes do projeto: \'nomeProjeto2\', \'desenvolvimento\'," +
                     " \'público\', \'Projeto para teste do MantisBT\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 31
- testRunner.And("eu clicar em atualizar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 32
+ testRunner.And("eu clicar em atualizar projeto", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 33
  testRunner.Then("eu devo ver a mensagem de que já existe um projeto com esse nome", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

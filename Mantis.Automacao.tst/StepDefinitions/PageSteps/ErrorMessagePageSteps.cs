@@ -33,7 +33,11 @@ namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
             Assertions.AssertTrue(errorPage.AmInProjectAlreadyExistsPage());
         }
 
-
+        [StepDefinition(@"eu devo ver a mensagem de que já existe uma categiria com esse nome")]
+        public void ThenEuDevoVerAMensagemDeQueJaExisteUmaCategiriaComEsseNome()
+        {
+            Assertions.AssertTrue(errorPage.AmInCategoryAlreadyExistsPage());
+        }
 
     }
 }

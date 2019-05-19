@@ -14,6 +14,9 @@ Scenario Outline: Criar uma tarefa
 	Then o sistema deve mostra a tela confirmando a criação da tarefa
 	And o sistema deve criar a tarefa
 
+	Examples: 
+	|||||
+
 Scenario: Continuar relatando tarefas
 	Given eu entre na tela de criar tarefas
 	When eu entrar com as informações da nova tarefa: 

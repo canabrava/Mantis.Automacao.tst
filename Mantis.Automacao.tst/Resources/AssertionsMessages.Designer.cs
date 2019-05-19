@@ -115,6 +115,24 @@ namespace Mantis.Automacao.tst.Resources {
         }
         
         /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The category was not created successfully!.
+        /// </summary>
+        internal static string CategoryCreatedFail {
+            get {
+                return ResourceManager.GetString("CategoryCreatedFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a The category was created successfully!.
+        /// </summary>
+        internal static string CategoryCreatedSucces {
+            get {
+                return ResourceManager.GetString("CategoryCreatedSucces", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The correct error was not displayed!.
         /// </summary>
         internal static string ErrorDisplayedFail {

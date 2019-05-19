@@ -6,7 +6,7 @@ using TechTalk.SpecFlow;
 namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
 {
     [Binding]
-    class UserNavigationSteps
+    class NavigationSteps
     {
         [StepDefinition(@"entre na tela de criar nova conta")]
         public void GivenEntreNaTelaDeCriarNovaConta()
@@ -32,6 +32,12 @@ namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
         public void WhenClicarEmVoltar()
         {
             DriverFactory.INSTANCE.Navigate().Back();
+        }
+
+        [StepDefinition(@"eu entre na tela de gerenciar projetos")]
+        public void GivenEuEntreNaTelaDeGerenciarProjetos()
+        {
+            Navigation.EnterManageProjectsPage();
         }
 
 
