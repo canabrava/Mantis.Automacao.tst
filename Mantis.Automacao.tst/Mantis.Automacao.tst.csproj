@@ -169,10 +169,12 @@
     </Compile>
     <Compile Include="StepDefinitions\DataBaseSteps\CategoryTableSteps.cs" />
     <Compile Include="StepDefinitions\DataBaseSteps\ProjectTableSteps.cs" />
+    <Compile Include="StepDefinitions\DataBaseSteps\TaskTableSteps.cs" />
     <Compile Include="StepDefinitions\DataBaseSteps\UserTableSteps.cs" />
     <Compile Include="StepDefinitions\NavigateSteps\LoginSteps.cs" />
     <Compile Include="StepDefinitions\NavigateSteps\NavigationSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ConfirmationPageSteps.cs" />
+    <Compile Include="StepDefinitions\PageSteps\CreateTaskPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ManageProjectPageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\SuccessMessagePageSteps.cs" />
     <Compile Include="StepDefinitions\PageSteps\ErrorMessagePageSteps.cs" />

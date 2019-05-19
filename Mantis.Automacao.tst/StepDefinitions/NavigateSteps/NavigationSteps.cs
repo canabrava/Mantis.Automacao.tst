@@ -40,6 +40,12 @@ namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
             Navigation.EnterManageProjectsPage();
         }
 
+        [StepDefinition(@"eu entre na tela de criar tarefas")]
+        public void GivenEuEntreNaTelaDeCriarTarefas()
+        {
+            ScenarioContext.Current.Pending();
+        }
+
 
     }
 }
