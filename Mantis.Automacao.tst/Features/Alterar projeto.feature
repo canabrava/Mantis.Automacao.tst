@@ -1,4 +1,5 @@
-﻿Feature: Alterar projeto
+﻿@Projetos
+Feature: Alterar projeto
 
 	Como: Administrador
 	Quero: Alterar as informações de um projeto

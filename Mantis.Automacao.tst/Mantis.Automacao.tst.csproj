@@ -132,6 +132,7 @@
     <Compile Include="Helpers\DataBaseHelper\DataBaseHelper.cs" />
     <Compile Include="Helpers\DataBaseHelper\DbConnection\DBMantisDAL.cs" />
     <Compile Include="Helpers\DriverFactory.cs" />
+    <Compile Include="Helpers\ProjectHooks.cs" />
     <Compile Include="Helpers\ReportHelper\Assertions.cs" />
     <Compile Include="Helpers\ReportHelper\LogTracer.cs" />
     <Compile Include="Helpers\ReportHelper\ReportingHelper.cs" />
@@ -182,8 +183,10 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Features\Adicionar categoria.feature" />
     <None Include="Features\Criar novo projeto.feature" />
     <None Include="Features\Criar novo usuario.feature" />
+    <None Include="Features\Criar Tarefa.feature" />
     <None Include="Features\Deletar projeto.feature" />
     <None Include="Features\Login.feature" />
     <None Include="Features\Alterar projeto.feature" />

@@ -9,7 +9,12 @@ namespace Mantis.Automacao.tst.Pages
     {
         #region Mapping
 
+        By fieldCategory = By.XPath("//*[@class='input-sm']");
+
         By btnCreateNewProject = By.XPath("//*[contains(text(), 'Criar Novo Projeto')]");
+
+        By btnAddCategoru = By.XPath("//*[@value='Adicionar Categoria']");
+
 
         #endregion
 
@@ -35,6 +40,7 @@ namespace Mantis.Automacao.tst.Pages
                 message = amInManageProjectPage ? AssertionsMessages.AmInManageProjectPageSuccess : AssertionsMessages.AmInManageProjectPageFail
             };
         }
+
         #endregion
     }
 }

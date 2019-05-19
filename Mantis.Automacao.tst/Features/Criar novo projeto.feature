@@ -1,4 +1,5 @@
-﻿Feature: Criar novo projeto
+﻿@Projetos
+Feature: Criar novo projeto
 
 	Como: Administrador
 	Quero: Criar um novo projeto

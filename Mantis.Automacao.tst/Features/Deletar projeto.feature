@@ -1,4 +1,5 @@
-﻿Feature: Deletar projeto
+﻿@Projetos
+Feature: Deletar projeto
 
 	Como: Administrador
 	Quero: Deletar um novo projeto
