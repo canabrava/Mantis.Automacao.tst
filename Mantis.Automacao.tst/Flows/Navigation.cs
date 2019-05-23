@@ -1,10 +1,15 @@
-﻿using Mantis.Automacao.tst.Pages;
+﻿using Mantis.Automacao.tst.Helpers;
+using Mantis.Automacao.tst.Pages;
 
 
 namespace Mantis.Automacao.tst.Flows
 {
     public static class Navigation
     {
+        public static void GoBack()
+        {
+            DriverFactory.INSTANCE.Navigate().Back();
+        }
 
         public static void EnterCreateUserPage()
         {
@@ -46,6 +51,13 @@ namespace Mantis.Automacao.tst.Flows
             userPage.sideMenu.ClickManageOverview();
             manageOverviewPage.manageMenu.ClickManageProjects();
             manageProjectPage.ClickProject(projectId);
+        }
+
+        public static void EnterCreateTaskPage()
+        {
+            var userPage = new UserPage();
+
+            userPage.sideMenu.ClickCreateTask();
         }
 
 

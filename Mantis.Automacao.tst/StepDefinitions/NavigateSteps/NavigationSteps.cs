@@ -1,6 +1,5 @@
 ﻿using Mantis.Automacao.tst.DBSteps;
 using Mantis.Automacao.tst.Flows;
-using Mantis.Automacao.tst.Helpers;
 using TechTalk.SpecFlow;
 
 namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
@@ -31,7 +30,7 @@ namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
         [StepDefinition(@"clicar em voltar")]
         public void WhenClicarEmVoltar()
         {
-            DriverFactory.INSTANCE.Navigate().Back();
+            Navigation.GoBack();
         }
 
         [StepDefinition(@"eu entre na tela de gerenciar projetos")]
@@ -43,7 +42,7 @@ namespace Mantis.Automacao.tst.StepDefinitions.NavigateSteps
         [StepDefinition(@"eu entre na tela de criar tarefas")]
         public void GivenEuEntreNaTelaDeCriarTarefas()
         {
-            ScenarioContext.Current.Pending();
+            Navigation.EnterCreateTaskPage();
         }
 
 

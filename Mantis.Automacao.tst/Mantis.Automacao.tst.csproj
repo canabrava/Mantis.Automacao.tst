@@ -148,6 +148,7 @@
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Pages\ConfirmationPage.cs" />
     <Compile Include="Pages\CreateProjectPage.cs" />
+    <Compile Include="Pages\CreateTaskPage.cs" />
     <Compile Include="Pages\ErrorMessagePage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\LoginPasswordPage.cs" />

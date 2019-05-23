@@ -5,7 +5,6 @@ Feature: Login
 	Quero: Logar no sistema
 	Para que:: Ter acesso às minhas informações
 
-
 Scenario: Entrar com caracteres válidos no nome do usuário 
 	Given eu entro com o nome do usuário 'administrator' no campo do nome do usuário
 	When clicar em entrar na pagina de senha

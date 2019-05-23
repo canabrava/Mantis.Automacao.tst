@@ -74,9 +74,10 @@ namespace Mantis.Automacao.tst.Features
 #line hidden
         }
         
-        public virtual void CriarUmaTarefa(string cATEGORIA, string fREQUENCIA, string gRAVIDADE, string pRIORIDADE, string aTRIBUIR_A, string rEUSMO, string dESCRICAO, string pASSOS_PARA_REPRODUZIR, string iNFORMACOES_ADICIONAIS, string vISIBILIDADE, string[] exampleTags)
+        [TechTalk.SpecRun.ScenarioAttribute("Criar uma tarefa", SourceLine=9)]
+        public virtual void CriarUmaTarefa()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar uma tarefa", null, exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Criar uma tarefa", null, ((string[])(null)));
 #line 10
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -84,51 +85,86 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line 11
  testRunner.Given("eu entre na tela de criar tarefas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "CATEGORIA",
+                        "FREQUENCIA",
+                        "GRAVIDADE",
+                        "PRIORIDADE",
+                        "ATRIBUIR_A",
+                        "REUSMO",
+                        "DESCRIÇÃO",
+                        "PASSOS_PARA_REPRODUZIR",
+                        "INFORMAÇÕES_ADICIONAIS",
+                        "VISIBILIDADE"});
+            table1.AddRow(new string[] {
+                        "\"General\"",
+                        "\"sempre\"",
+                        "\"pequena\"",
+                        "\"normal\"",
+                        "\"administrador\"",
+                        "\"Resumo\"",
+                        "\"Descrição\"",
+                        "\"Passos para reproduzir\"",
+                        "\"Informações adicionais\"",
+                        "\"público\""});
 #line 12
- testRunner.When(string.Format("eu entrar com as informações da nova tarefa: \'{0}\', \'{1}\', \'{2}\', \'{3}\', \'{4}\', \'" +
-                        "{5}\', \'{6}\', \'{7}\', \'{8}\', \'{9}\'", cATEGORIA, fREQUENCIA, gRAVIDADE, pRIORIDADE, aTRIBUIR_A, rEUSMO, dESCRICAO, pASSOS_PARA_REPRODUZIR, iNFORMACOES_ADICIONAIS, vISIBILIDADE), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 13
- testRunner.And("clicar para criar uma nova tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
- testRunner.Then("o sistema deve mostra a tela confirmando a criação da tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("eu entrar com as informações da nova tarefa com as informações:", ((string)(null)), table1, "When ");
 #line 15
+ testRunner.And("clicar para criar uma nova tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 16
+ testRunner.Then("o sistema deve mostra a tela confirmando a criação da tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 17
  testRunner.And("o sistema deve criar a tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Criar uma tarefa, \"General\"", SourceLine=18)]
-        public virtual void CriarUmaTarefa_General()
-        {
-#line 10
-this.CriarUmaTarefa("\"General\"", "\"sempre\"", "\"pequena\"", "\"normal\"", "\"administrador\"", "\"Resumo\"", "\"Descrição\"", "\"Passos para reproduzir\"", "\"Informações adicionais\"", "\"público\"", ((string[])(null)));
-#line hidden
-        }
-        
-        [TechTalk.SpecRun.ScenarioAttribute("Continuar relatando tarefas", SourceLine=20)]
+        [TechTalk.SpecRun.ScenarioAttribute("Continuar relatando tarefas", SourceLine=19)]
         public virtual void ContinuarRelatandoTarefas()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Continuar relatando tarefas", null, ((string[])(null)));
-#line 21
+#line 20
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 22
+#line 21
  testRunner.Given("eu entre na tela de criar tarefas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 23
- testRunner.When("eu entrar com as informações da nova tarefa: \'General\', \'sempre\', \'pequena\', \'nor" +
-                    "mal\', \'administrador\', \'Resumo\', \'Descrição\', \'Passos para reproduzir\', \'Informa" +
-                    "ções adicionais\', \'público\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 24
- testRunner.And("eu marco a opção de criar mais tarefas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "CATEGORIA",
+                        "FREQUENCIA",
+                        "GRAVIDADE",
+                        "PRIORIDADE",
+                        "ATRIBUIR_A",
+                        "REUSMO",
+                        "DESCRIÇÃO",
+                        "PASSOS_PARA_REPRODUZIR",
+                        "INFORMAÇÕES_ADICIONAIS",
+                        "VISIBILIDADE"});
+            table2.AddRow(new string[] {
+                        "\"General\"",
+                        "\"sempre\"",
+                        "\"pequena\"",
+                        "\"normal\"",
+                        "\"administrador\"",
+                        "\"Resumo\"",
+                        "\"Descrição\"",
+                        "\"Passos para reproduzir\"",
+                        "\"Informações adicionais\"",
+                        "\"público\""});
+#line 22
+ testRunner.When("eu entrar com as informações da nova tarefa com as informações:", ((string)(null)), table2, "When ");
 #line 25
- testRunner.And("clicar para criar uma nova tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("eu marco a opção de criar mais tarefas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 26
- testRunner.Then("o sistema deve mostra a tela confirmando a criação da tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("clicar para criar uma nova tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 27
- testRunner.And("o sistema deve exibir a opção de criar mais tarefas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("o sistema deve mostra a tela confirmando a criação da tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 28
+ testRunner.And("o sistema deve exibir a opção de criar mais tarefas", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 29
  testRunner.And("o sistema deve criar a tarefa", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();

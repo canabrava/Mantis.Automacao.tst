@@ -9,6 +9,8 @@ namespace Mantis.Automacao.tst.Pages.Menus
 
         private By btnManageOverview = By.XPath("//*[@href='/manage_overview_page.php']");
 
+        private By btnCreateTask = By.XPath("//*[@href='/bug_report_page.php']");
+
         #endregion
 
         #region Actions
@@ -16,6 +18,11 @@ namespace Mantis.Automacao.tst.Pages.Menus
         public void ClickManageOverview()
         {
             Click(btnManageOverview);
+        }
+
+        public void ClickCreateTask()
+        {
+            Click(btnCreateTask);
         }
 
         #endregion

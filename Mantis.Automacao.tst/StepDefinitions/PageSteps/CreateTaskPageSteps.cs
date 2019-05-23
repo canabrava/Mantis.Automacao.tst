@@ -1,15 +1,18 @@
-﻿using TechTalk.SpecFlow;
+﻿using System.Data;
+using TechTalk.SpecFlow;
 
 namespace Mantis.Automacao.tst.StepDefinitions.PageSteps
 {
     [Binding]
     class CreateTaskPageSteps
     {
-        [StepDefinition(@"eu entrar com as informações da nova tarefa: '(.*)', '(.*)', '(.*)', '(.*)', '(.*)', '(.*)', '(.*)', '(.*)', '(.*)', '(.*)'")]
-        public void WhenEuEntrarComAsInformacoesDaNovaTarefa(string categoria, string frequencia, string gravidade, string prioridade, string atribuirA, string resumo, string descricao, string passosParaReproduzir, string informacoesAdicionais, string visibilidade)
+
+        [When(@"eu entrar com as informações da nova tarefa com as informações:")]
+        public void WhenEuEntrarComAsInformacoesDaNovaTarefaComAsInformacoes(DataTable table)
         {
             ScenarioContext.Current.Pending();
         }
+
 
         [StepDefinition(@"clicar para criar uma nova tarefa")]
         public void WhenClicarParaCriarUmaNovaTarefa()

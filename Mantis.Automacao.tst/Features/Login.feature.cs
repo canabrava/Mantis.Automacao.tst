@@ -70,56 +70,56 @@ namespace Mantis.Automacao.tst.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Entrar com caracteres válidos no nome do usuário", SourceLine=8)]
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com caracteres válidos no nome do usuário", SourceLine=7)]
         public virtual void EntrarComCaracteresValidosNoNomeDoUsuario()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entrar com caracteres válidos no nome do usuário", null, ((string[])(null)));
-#line 9
+#line 8
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 10
+#line 9
  testRunner.Given("eu entro com o nome do usuário \'administrator\' no campo do nome do usuário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 11
+#line 10
  testRunner.When("clicar em entrar na pagina de senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
+#line 11
  testRunner.Then("devo ir para a página de senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Entrar com carecteres inválidos no nome do usuário", SourceLine=13)]
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com carecteres inválidos no nome do usuário", SourceLine=12)]
         public virtual void EntrarComCarecteresInvalidosNoNomeDoUsuario()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entrar com carecteres inválidos no nome do usuário", null, ((string[])(null)));
-#line 14
+#line 13
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 15
+#line 14
  testRunner.Given("eu entro com o nome do usuário \'\"administrator\"\' no campo do nome do usuário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 16
+#line 15
  testRunner.When("clicar em entrar na pagina de senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 17
+#line 16
  testRunner.Then("eu devo ver uma mensagem avisando que houve um erro no login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário e senha corretos", SourceLine=18)]
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário e senha corretos", SourceLine=17)]
         public virtual void EntrarComNomeDoUsuarioESenhaCorretos()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entrar com nome do usuário e senha corretos", null, ((string[])(null)));
-#line 19
+#line 18
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 20
+#line 19
  testRunner.Given("eu entro com o nome do usuário \'administrator\' no campo do nome do usuário", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 21
+#line 20
  testRunner.When("clicar em entrar na pagina de senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 22
+#line 21
  testRunner.And("eu entro com a senha \'administrator\' no campo senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 23
+#line 22
  testRunner.And("clicar em entrar no sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
+#line 23
  testRunner.Then("eu devo entrar na pagina principal", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -128,35 +128,35 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void EntrarComNomeDoUsuarioOuSenhaErrados(string uSERNAME, string pASSWORD, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Entrar com nome do usuário ou senha errados", null, exampleTags);
-#line 26
+#line 25
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 27
+#line 26
  testRunner.Given(string.Format("eu entro com o nome do usuário \'{0}\' no campo do nome do usuário", uSERNAME), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 28
+#line 27
  testRunner.When("clicar em entrar na pagina de senha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 29
+#line 28
  testRunner.And(string.Format("eu entro com a senha \'{0}\' no campo senha", pASSWORD), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 30
+#line 29
  testRunner.And("clicar em entrar no sistema", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 31
+#line 30
  testRunner.Then("eu devo ver uma mensagem avisando que houve um erro no login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário ou senha errados, administrator", SourceLine=34)]
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário ou senha errados, administrator", SourceLine=33)]
         public virtual void EntrarComNomeDoUsuarioOuSenhaErrados_Administrator()
         {
-#line 26
+#line 25
 this.EntrarComNomeDoUsuarioOuSenhaErrados("administrator", "12345", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário ou senha errados, usuarioerrado", SourceLine=34)]
+        [TechTalk.SpecRun.ScenarioAttribute("Entrar com nome do usuário ou senha errados, usuarioerrado", SourceLine=33)]
         public virtual void EntrarComNomeDoUsuarioOuSenhaErrados_Usuarioerrado()
         {
-#line 26
+#line 25
 this.EntrarComNomeDoUsuarioOuSenhaErrados("usuarioerrado", "administrator", ((string[])(null)));
 #line hidden
         }

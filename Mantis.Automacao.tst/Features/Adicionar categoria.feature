@@ -1,4 +1,5 @@
-﻿Feature: Adicionar categoria
+﻿@Categorias
+Feature: Adicionar categoria
 	
 	Como: Administrador
 	Quero: Adicionar uma nova categoria
